@@ -39,6 +39,20 @@
     height: 400px;
 }
 
+.top-filler {
+    height: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.top-filler div {
+    background-color: #da7a27;
+    width: 75px;
+    height: 7px;
+    border-radius: 20px;
+}
+
 .section2>div {
     width: 50vw;
 }
