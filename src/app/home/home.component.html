@@ -10,8 +10,8 @@
                 <p>available to all.</p>
             </div>
             <form class="register-form" (ngSubmit)="registerForWaitlist(WaitlistRegister)" #WaitlistRegister="ngForm">
-                <input id="email" class="email" name="email" type="text" placeholder="Enter your email id"
-                    [formControl]="waitlistEmail">
+                <input id="email" class="email animated-delay-2" name="email" type="text" placeholder="Enter your email id"
+                    [formControl]="waitlistEmail" animateOnScroll animationName="animated wobble">
                 <button class="btn register-button" type="submit">JOIN OUR WAITLIST</button>
             </form>
             <div class="social-images">
@@ -22,6 +22,6 @@
         </div>
     </div>
     <div class="right">
-        <img src="assets/images/Header Image.png">
+        <img src="assets/images/Header Image.png" class="hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight"/>
     </div>
 </div>

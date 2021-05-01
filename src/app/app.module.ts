@@ -10,7 +10,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { TransactionsTestComponent } from './transactions-test/transactions-test.component';
+import { RulerTokenComponent } from './ruler-token/ruler-token.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,17 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     HeaderComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    TransactionsTestComponent,
+    RulerTokenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    // BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
