@@ -1,0 +1,93 @@
+.bold{
+    font-weight: 600;
+}
+
+.intro {
+    text-align: center;
+}
+
+.title {
+    font-size: 37px;
+}
+
+.description div {
+    margin-top: 35px;
+}
+
+.description p{
+    margin: 0px;
+}
+
+.title-small {
+    font-size: 25px;
+}
+
+.description-small div {
+    margin-top: 20px;
+}
+
+.description-small p{
+    margin: 0px;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.section2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    height: 400px;
+}
+
+.section2>div {
+    width: 50vw;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img{
+    height: 300px;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container>div{
+    width: 500px;
+}
+
+.image-cards-container{
+    margin-top: 100px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+.card-image-container {
+    text-align: center;
+}
+
+.bottom-filler{
+    height:200px;
+}
+
+.about-component{
+    background-image: url("../../assets/images/Background.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}

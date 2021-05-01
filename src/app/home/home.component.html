@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="home-container">
+    <div class="left">
+        <div class="left-content">
+            <div class="left-title">Trade made <p>Smarter</p>
+            </div>
+            <div class="left-description">
+                <p>An Inclusive Automated Supply Chain Network built</p>
+                <p>ontop of Public Blockchain making Trade Finance</p>
+                <p>available to all.</p>
+            </div>
+            <form class="register-form" (ngSubmit)="registerForWaitlist(WaitlistRegister)" #WaitlistRegister="ngForm">
+                <input id="email" class="email" name="email" type="text" placeholder="Enter your email id"
+                    [formControl]="waitlistEmail">
+                <button class="btn register-button" type="submit">JOIN OUR WAITLIST</button>
+            </form>
+            <div class="social-images">
+                <img src="assets/images/Twitter - Grey.png">
+                <img src="assets/images/Discord - Grey.png">
+                <img src="assets/images/Telegram - Grey.png">
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img src="assets/images/Header Image.png">
+    </div>
+</div>

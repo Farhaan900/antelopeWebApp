@@ -1,0 +1,24 @@
+nav{
+    padding: 15px;
+    padding-right: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #da7a27;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a.selected {
+    background-color:#e26d08;
+    color: white !important;
+}
