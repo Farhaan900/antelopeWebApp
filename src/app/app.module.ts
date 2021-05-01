@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { RouterModule } from '@angular/router';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 
@@ -14,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { TransactionsTestComponent } from './transactions-test/transactions-test.component';
 import { RulerTokenComponent } from './ruler-token/ruler-token.component';
+import { EngineeringComponent } from './engineering/engineering.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { RulerTokenComponent } from './ruler-token/ruler-token.component';
     NavbarComponent,
     AboutComponent,
     TransactionsTestComponent,
-    RulerTokenComponent
+    RulerTokenComponent,
+    EngineeringComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,12 @@ import { RulerTokenComponent } from './ruler-token/ruler-token.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    RouterModule.forRoot([
+      {path: 'home', component: HomeComponent},
+      {path: 'about', component: AboutComponent},
+      {path: 'ruler-token', component: RulerTokenComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

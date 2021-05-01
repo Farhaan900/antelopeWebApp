@@ -12,4 +12,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToElement(element: any): void {
+    console.log("scrolling to - ")
+    let el = document.getElementById(element);
+    console.log(el)
+    el?.scrollIntoView({behavior: "smooth", inline: "nearest"});
+}
+
 }

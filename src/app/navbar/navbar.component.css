@@ -8,6 +8,7 @@ nav ul {
     display: flex;
     width: 500px;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 nav a {
@@ -16,6 +17,11 @@ nav a {
     text-decoration: none;
     padding: 10px;
     border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #eeb27d;
+    color: white;
 }
 
 a.selected {

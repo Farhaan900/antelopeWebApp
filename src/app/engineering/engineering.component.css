@@ -1,0 +1,34 @@
+div#engineering {
+    padding-top: 50px;
+    }
+
+div#engineering>div {
+padding-top: 50px;
+}
+
+.title {
+    font-size: 34px;
+    text-align: center;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;;
+}
+
+.image-frame {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 60%);
+    box-shadow: 4px 10px 17px 6px rgb(0 0 0 / 50%);
+    margin: 15px;
+}
+
+.image-frame img {
+    width: 220px;
+}

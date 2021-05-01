@@ -2,7 +2,28 @@
 @import './assets/animate.css';
 
 .animated-delay-05 {
-    animation-delay: 0.5s;
+    animation-delay: 600ms;
+    -webkit-animation-delay: 600ms;
+    -moz-animation-delay: 600ms;
+    -o-animation-delay: 600ms;
+}
+
+.animated-delay-01 {
+    animation-delay: 100ms;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+
+.animated-delay-02 {
+    animation-delay: 200ms;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+
+.animated-delay-03 {
+    animation-delay: 300ms;
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
@@ -20,6 +41,13 @@
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
+}
+
+.animated-delay-3 {
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
 }
 
 .animated {
