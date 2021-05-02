@@ -1,6 +1,45 @@
 .footer-component-wrapper{
-    height: 400px;
-    width: 100vw;
+    height: 210px;
     margin-top: 50px;
     background-color:#da7b28;
+    padding:50px;
+    display:flex;
+    justify-content: space-between; 
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.socials-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-container {
+    height: 30px;
+}
+
+button.newsletter-signup {
+    background-color: #da7b28;
+    color: white;
+    width: 300px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    cursor: pointer;
 }

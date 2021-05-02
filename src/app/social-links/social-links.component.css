@@ -1,0 +1,7 @@
+.images-container.social-links, img, a {
+    height: inherit;
+}
+
+img{
+    margin-right: 12px;
+}

@@ -22,6 +22,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { TeamComponent } from './team/team.component';
 import { CommunityComponent } from './community/community.component';
 import { FooterComponent } from './footer/footer.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FooterComponent } from './footer/footer.component';
     EngineeringComponent,
     TeamComponent,
     CommunityComponent,
-    FooterComponent
+    FooterComponent,
+    SocialLinksComponent
   ],
   imports: [
     BrowserModule,
