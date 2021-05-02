@@ -20,6 +20,8 @@ import { EngineeringComponent } from './engineering/engineering.component';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { TeamComponent } from './team/team.component';
+import { CommunityComponent } from './community/community.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { TeamComponent } from './team/team.component';
     TransactionsTestComponent,
     RulerTokenComponent,
     EngineeringComponent,
-    TeamComponent
+    TeamComponent,
+    CommunityComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

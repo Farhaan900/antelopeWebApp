@@ -1,0 +1,94 @@
+.community-component-container{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-community-container{
+    background-image: url("../../assets/images/Join us bg.png");
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 900px;
+    display: flex;
+}
+
+.community-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.join-community-left{
+    height: 230px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-community-left>div{
+    height: 150px;
+    width: 350px;
+}
+
+.join-community-right{
+    height: 230px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.images-container img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.blogposts-container{
+    margin-top: 50px;
+    width: 95vw;
+}
+
+.blog-cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card {
+    height: 350px;
+    width: 245px;
+    -webkit-box-shadow: 0px -10px 19px -3px rgba(0,0,0,0.4); 
+    box-shadow: 0px -10px 19px -3px rgba(0,0,0,0.4);
+}
+
+.blog-title {
+    font-size: 18px;
+    /* margin-bottom: 10px; */
+    margin-top: 15px;
+}
+
+.blog-caption {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.blog-content {
+    font-size: 13px;
+}
+
+.blog-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
