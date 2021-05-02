@@ -1,0 +1,63 @@
+div#team>div {
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.guild-container {
+    height: 400px;
+}
+
+.team-card{
+    text-align: center;
+}
+
+.team-name {
+    font-size: 20px;
+    color: #da7b28;
+}
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+}
+
+.orange-shadow{
+    -webkit-box-shadow: 5px 4px 17px -3px rgba(218,123,40,0.45); 
+    box-shadow: 5px 4px 17px -3px rgba(218,123,40,0.45);
+}
+
+.advisors-box{
+    display: flex;
+    justify-content: center;
+}
+
+.advisors-box>div{
+    height: 300px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.advisor-left {
+    flex-grow: 0.5;
+    display: flex;
+    height: 200px;
+    border-right: 1px solid #e6a063;
+}
+
+.advisor-right {
+    flex-grow: 0.5;
+    display: flex;
+    height: 200px;
+}
+
+.advisor-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

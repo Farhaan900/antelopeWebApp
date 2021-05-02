@@ -18,6 +18,10 @@ import { TransactionsTestComponent } from './transactions-test/transactions-test
 import { RulerTokenComponent } from './ruler-token/ruler-token.component';
 import { EngineeringComponent } from './engineering/engineering.component';
 
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { TeamComponent } from './team/team.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,8 @@ import { EngineeringComponent } from './engineering/engineering.component';
     AboutComponent,
     TransactionsTestComponent,
     RulerTokenComponent,
-    EngineeringComponent
+    EngineeringComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { EngineeringComponent } from './engineering/engineering.component';
       {path: 'about', component: AboutComponent},
       {path: 'ruler-token', component: RulerTokenComponent},
     ]),
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
