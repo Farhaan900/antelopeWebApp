@@ -12,7 +12,7 @@ div#team>div {
     height: 400px;
 }
 
-.team-card{
+.team-card {
     text-align: center;
 }
 
@@ -21,25 +21,26 @@ div#team>div {
     color: #da7b28;
 }
 
-.carousel-container{
+.carousel-container {
     display: flex;
     justify-content: center;
 }
 
-.orange-shadow{
-    -webkit-box-shadow: 5px 4px 17px -3px rgba(218,123,40,0.45); 
-    box-shadow: 5px 4px 17px -3px rgba(218,123,40,0.45);
+.orange-shadow {
+    -webkit-box-shadow: 5px 4px 17px -3px rgba(218, 123, 40, 0.45);
+    box-shadow: 5px 4px 17px -3px rgba(218, 123, 40, 0.45);
 }
 
-.advisors-box{
+.advisors-box {
     display: flex;
     justify-content: center;
 }
 
-.advisors-box>div{
-    height: 300px;
-    width: 900px;
+.advisors-box>div {
+    min-height: 300px;
+    max-width: 900px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -47,13 +48,24 @@ div#team>div {
     flex-grow: 0.5;
     display: flex;
     height: 200px;
+    padding: 20px;
     border-right: 1px solid #e6a063;
+}
+
+@media screen and (max-width: 890px) {
+    .advisor-left {
+        border-right: 0px solid #e6a063;
+    }
+    .advisors-box>div {
+        max-width: 450px;
+    }
 }
 
 .advisor-right {
     flex-grow: 0.5;
     display: flex;
     height: 200px;
+    padding: 20px;
 }
 
 .advisor-details {

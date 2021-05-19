@@ -1,4 +1,4 @@
-nav{
+/* nav{
     padding: 15px;
     padding-right: 100px;
 }
@@ -27,4 +27,69 @@ nav a:hover {
 a.selected {
     background-color:#e26d08;
     color: white !important;
+} */
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    border-radius: 20px;
+    color: #da7a27;
+    font-weight: 400;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.topnav a:hover {
+    background-color: #eeb27d;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #e26d08;
+    color: white !important;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive a:not(:first-child) {
+        background-color: rgb(239 235 227);
+    }
+    .topnav.responsive a:hover {
+        background-color: #eeb27d;
+        color: white;
+    }
 }

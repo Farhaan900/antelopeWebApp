@@ -1,11 +1,17 @@
-.footer-component-wrapper{
-    height: 210px;
+.footer-component-wrapper {
+    min-height: 210px;
     margin-top: 50px;
-    background-color:#da7b28;
-    padding:50px;
-    display:flex;
-    justify-content: space-between; 
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: white;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(115deg, rgba(255, 255, 255, 1) 0%, rgba(250, 202, 161, 1) 1%, rgba(225, 147, 79, 1) 12%, rgba(218, 123, 40, 1) 34%);
+}
+
+.footer-component-wrapper>div {
+    padding: 10px;
 }
 
 .links {
@@ -14,7 +20,7 @@
     margin-top: 30px;
 }
 
-.links a{
+.links a {
     color: white;
     text-decoration: none;
     margin-top: 5px;
@@ -35,8 +41,9 @@
 button.newsletter-signup {
     background-color: #da7b28;
     color: white;
-    width: 300px;
+    max-width: 300px;
     height: 35px;
+    margin-top: 20px;
     border: 2px solid white;
     border-radius: 20px;
     font-size: 14px;

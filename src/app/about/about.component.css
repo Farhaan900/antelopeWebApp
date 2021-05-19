@@ -1,20 +1,28 @@
-.bold{
+.bold {
     font-weight: 600;
 }
 
 .intro {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     font-size: 37px;
 }
 
+.description {
+    max-width: 1000px;
+}
+
 .description div {
     margin-top: 35px;
 }
 
-.description p{
+.description p {
     margin: 0px;
 }
 
@@ -26,7 +34,7 @@
     margin-top: 20px;
 }
 
-.description-small p{
+.description-small p {
     margin: 0px;
     font-size: 14px;
     margin-top: 1px;
@@ -36,7 +44,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
-    height: 400px;
+    min-height: 400px;
+    line-height: 20px;
 }
 
 .top-filler {
@@ -47,7 +56,7 @@
 }
 
 .top-filler div {
-    background-color: #da7a27;
+    background-color: #da7a28;
     width: 75px;
     height: 7px;
     border-radius: 20px;
@@ -57,29 +66,41 @@
     width: 50vw;
 }
 
+@media screen and (max-width: 750px) {
+    .section2 {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .section2>div {
+        width: 92vw;
+    }
+}
+
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.image-container img{
+.image-container img {
     height: 300px;
 }
 
-.text-container{
+.text-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.text-container>div{
+.text-container>div {
     width: 500px;
 }
 
-.image-cards-container{
+.image-cards-container {
     margin-top: 100px;
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -87,7 +108,8 @@
     width: 250px;
 }
 
-.card p{
+.card p {
+    text-align: center;
     font-size: 14px;
 }
 
@@ -95,13 +117,25 @@
     text-align: center;
 }
 
-.bottom-filler{
-    height:200px;
+.bottom-filler {
+    height: 200px;
 }
 
-.about-component{
+@media screen and (max-width: 1015px) {
+    .bottom-filler {
+        height: 50px;
+    }
+}
+
+.about-component {
     background-image: url("../../assets/images/Background.png");
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 515px) {
+    .about-component {
+        background-image: none;
+    }
 }

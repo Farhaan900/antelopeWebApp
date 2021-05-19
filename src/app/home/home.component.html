@@ -2,26 +2,27 @@
 <div class="home-container">
     <div class="left">
         <div class="left-content">
-            <div class="left-title">Trade made <p>Smarter</p>
+            <div class="left-title">
+                <p>Defi for</p>
+                <p class="colored">Enterprises</p>
             </div>
             <div class="left-description">
-                <p>An Inclusive Automated Supply Chain Network built</p>
-                <p>ontop of Public Blockchain making Trade Finance</p>
-                <p>available to all.</p>
+                <div>Access decentralized capital markets for supply chain & trade finance. We make it simple to easily access loans by abstracting away all the complexities of crypto with best interest rates.
+                </div>
             </div>
             <form class="register-form" (ngSubmit)="registerForWaitlist(WaitlistRegister)" #WaitlistRegister="ngForm">
-                <input id="email" class="email animated-delay-2" name="email" type="text" placeholder="Enter your email id"
-                    [formControl]="waitlistEmail" animateOnScroll animationName="animated tada">
+                <input id="email" class="email animated-delay-2" name="email" type="text" placeholder="Enter your email id" [formControl]="waitlistEmail" animateOnScroll animationName="animated shake">
                 <button class="btn register-button" type="submit">JOIN OUR WAITLIST</button>
             </form>
             <div class="social-images">
-                <img src="assets/images/Twitter - Grey.png">
-                <img src="assets/images/Discord - Grey.png">
-                <img src="assets/images/Telegram - Grey.png">
+                <a href="https://twitter.com/ANTELOPEDAO"><img src="assets/images/Twitter - Grey.png"></a>
+                <a href="https://discord.gg/ZUK59p79aG"><img src="assets/images/Discord - Grey.png"></a>
+                <a href="https://t.me/joinchat/fZil3r7YwaI3ZGQ0"><img src="assets/images/Telegram - Grey.png"></a>
             </div>
         </div>
     </div>
     <div class="right">
-        <img src="assets/images/Header Image.png" class="hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight"/>
+        <img src="assets/images/Header Image.png" />
+        <!-- class="hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight" /> -->
     </div>
 </div>

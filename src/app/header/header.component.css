@@ -1,9 +1,8 @@
-.header{
+.header {
     height: 180px;
     display: flex;
     justify-content: space-between;
 }
-
 
 .logo {
     width: 250px;
@@ -12,6 +11,18 @@
     align-items: center;
 }
 
-.logo img{
+.logo img {
     height: 160px;
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        height: 120px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .logo img {
+        height: 100px;
+    }
 }

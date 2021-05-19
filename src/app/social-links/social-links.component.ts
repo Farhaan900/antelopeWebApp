@@ -14,15 +14,15 @@ export class SocialLinksComponent implements OnInit {
   socialLinks = [
     {
       imageName: "Linkedin.png",
-      link: "#"
+      link: "https://www.linkedin.com/company/smacoteq-it"
     },
     {
       imageName: "Twitter.png",
-      link: "#"
+      link: "https://twitter.com/ANTELOPEDAO"
     }, 
     {
       imageName: "Discord.png",
-      link: "#"
+      link: "https://discord.gg/ZUK59p79aG"
     }, 
     {
       imageName: "Reddit.png",
@@ -30,7 +30,7 @@ export class SocialLinksComponent implements OnInit {
     }, 
     {
       imageName: "Telegram.png",
-      link: "#"
+      link: "https://t.me/joinchat/fZil3r7YwaI3ZGQ0"
     }, 
     {
       imageName: "Youtube.png",

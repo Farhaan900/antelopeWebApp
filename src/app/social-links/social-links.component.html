@@ -17,7 +17,7 @@
     <a href="#">
         <img src="assets/images/Youtube.png">
     </a> -->
-    <a *ngFor="let link of socialLinks" href="{{link.link}}">
+    <a *ngFor="let link of socialLinks" href="{{link.link}}" target="_blank">
         <img src="assets/images/{{link.imageName}}" [ngStyle]="{'margin-right': spacing}">
     </a>
 </div>

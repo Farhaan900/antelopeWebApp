@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TeamCards } from '../team-cards'
 
 @Component({
@@ -9,9 +9,9 @@ import { TeamCards } from '../team-cards'
 export class TeamComponent implements OnInit {
 
   teamMembers: Array<TeamCards> = new Array<TeamCards>()
-  
+  carouselWidth: number = 900;
 
-  constructor() { 
+  constructor() {
     this.teamMembers = [
       {
         imageName: "ravi1.png",
@@ -48,6 +48,28 @@ export class TeamComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.resizecarousel()
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    console.log(window.innerWidth);
+    this.resizecarousel();
+  }
+
+  resizecarousel() {
+    if (window.innerWidth < 500) {
+      this.carouselWidth = 200
+    }
+    else if (window.innerWidth < 700) {
+      this.carouselWidth = 470
+    }
+    else if (window.innerWidth < 1000) {
+      this.carouselWidth = 670
+    }
+    else if (window.innerWidth >= 1000) {
+      this.carouselWidth = 900
+    }
   }
 
 }
