@@ -89,6 +89,9 @@
     .social-links-wrapper {
         height: 30px;
     }
+    .community-component-container {
+        margin-top: 50px;
+    }
 }
 
 .blogposts-container {
