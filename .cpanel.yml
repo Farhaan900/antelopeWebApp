@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+      - export DEPLOYPATH=/home/antelopedao.io
+      - /bin/cp -R dist/antelope-dao-app $DEPLOYPATH
