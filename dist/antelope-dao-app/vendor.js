@@ -16647,6 +16647,7 @@ class AnimationFrameAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__["As
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "W70P":
 /*!**************************************************!*\
   !*** ./node_modules/skrollr/dist/skrollr.min.js ***!
@@ -16660,6 +16661,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! skrollr 0.6.26 (2014-06-08) | Alexander Pr
 
 /***/ }),
 
+=======
+>>>>>>> parent of b2e2f02 (build - responsive)
 /***/ "WMd4":
 /*!*************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/Notification.js ***!
@@ -73634,6 +73637,255 @@ function plucker(props, length) {
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "wR1u":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/ng2-animate-on-scroll/__ivy_ngcc__/fesm2015/ng2-animate-on-scroll.js ***!
+  \*******************************************************************************************/
+/*! exports provided: AnimateOnScrollDirective, AnimateOnScrollModule, ScrollService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimateOnScrollDirective", function() { return AnimateOnScrollDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimateOnScrollModule", function() { return AnimateOnScrollModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScrollService", function() { return ScrollService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+
+
+
+class ScrollService {
+    constructor() {
+        this.scrollSub = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subscription"]();
+        this.resizeSub = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subscription"]();
+        // set initial value
+        this.manageScrollPos();
+        // create observable that we can subscribe to from component or directive
+        this.scrollObs = typeof window !== 'undefined' ? Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["fromEvent"])(window, 'scroll') : rxjs__WEBPACK_IMPORTED_MODULE_1__["EMPTY"];
+        // initiate subscription to update values
+        this.scrollSub = this.scrollObs
+            .subscribe(() => this.manageScrollPos());
+        // create observable for changes in screen size
+        this.resizeObs = typeof window !== 'undefined' ? Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["fromEvent"])(window, 'resize') : rxjs__WEBPACK_IMPORTED_MODULE_1__["EMPTY"];
+        // initiate subscription to update values
+        this.resizeSub = this.resizeObs
+            .subscribe(() => this.manageScrollPos());
+    }
+    manageScrollPos() {
+        // update service property
+        this.pos = typeof window !== 'undefined' ? window.pageYOffset : 0;
+    }
+    ngOnDestroy() {
+        this.scrollSub.unsubscribe();
+        this.resizeSub.unsubscribe();
+    }
+}
+ScrollService.ɵfac = function ScrollService_Factory(t) { return new (t || ScrollService)(); };
+ScrollService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ScrollService, factory: ScrollService.ɵfac });
+ScrollService.ctorParameters = () => [];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ScrollService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return []; }, null); })();
+
+class AnimateOnScrollDirective {
+    constructor(elementRef, renderer, scroll) {
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.scroll = scroll;
+        this.scrollSub = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subscription"]();
+        this.resizeSub = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subscription"]();
+        // Pixel offset from screen bottom to the animated element to determine the start of the animation
+        this.offset = 80; // for scroll Listener
+    }
+    get id() {
+        return this.elementRef.nativeElement.id;
+    }
+    ngOnInit() {
+        if (!this.animationName) {
+            return;
+        }
+        // default visibility to false
+        this.isVisible = false;
+        this.useScroll = this.useScroll ? this.useScroll : ((this.useScroll === false) ? false : true);
+        this.threshold = this.threshold ? (this.threshold || 0.5) : 0.5;
+        // using intersecting observer by default, else fallback to scroll Listener
+        if ('IntersectionObserver' in window && this.useScroll) {
+            const options = {
+                root: null,
+                threshold: this.threshold,
+                rootMargin: '0px'
+            };
+            const observer = new IntersectionObserver((entries, _) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+                    this.addAnimationClass();
+                });
+            }, options);
+            observer.observe(this.elementRef.nativeElement);
+            return;
+        }
+        // subscribe to scroll event using service
+        this.scrollSub = this.scroll.scrollObs
+            .subscribe(() => this.manageVisibility());
+        // subscribe to resize event using service so scrolling position is always accurate
+        this.resizeSub = this.scroll.resizeObs
+            .subscribe(() => this.manageVisibility());
+    }
+    ngAfterViewInit() {
+        // run visibility check initially in case the element is already visible in viewport
+        setTimeout(() => this.manageVisibility(), 1);
+    }
+    ngOnDestroy() {
+        this.scrollSub.unsubscribe();
+        this.resizeSub.unsubscribe();
+    }
+    /**
+     * check for visibility of element in viewport to add animation
+     *
+     * @returns void
+     */
+    manageVisibility() {
+        if (this.isVisible) {
+            // Optimisation; nothing to do if class has already been applied
+            return;
+        }
+        // check for window height, may change with a window resize
+        this.getWinHeight();
+        // get vertical position for selected element
+        this.getOffsetTop();
+        // we should trigger the addition of the animation class a little after getting to the element
+        const scrollTrigger = this.offsetTop + this.offset - this.winHeight;
+        // using values updated in service
+        if (this.scroll.pos >= scrollTrigger) {
+            this.addAnimationClass();
+        }
+    }
+    /**
+     * utility function to mark element visible and add css class
+     *
+     * @returns void
+     */
+    addAnimationClass() {
+        // stops execution if no class is provided
+        if (!this.animationName) {
+            return;
+        }
+        // mark this element visible, we won't remove the class after this
+        this.isVisible = true;
+        // use default for animate.css if no value provided
+        this.setClass(this.animationName);
+    }
+    /**
+     * utility function to add one or more css classes to element in DOM
+     *
+     * @param  {string} classes
+     * @returns void
+     */
+    setClass(classes) {
+        for (const c of classes.split(' ')) {
+            this.renderer.addClass(this.elementRef.nativeElement, c);
+        }
+    }
+    /**
+     * get window height utility function
+     *
+     * @returns void
+     */
+    getWinHeight() {
+        this.winHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
+    }
+    /**
+     * get offsetTop value for element
+     *
+     * @returns void
+     */
+    getOffsetTop() {
+        if (typeof this.elementRef.nativeElement.getBoundingClientRect === 'function') {
+            const viewportTop = this.elementRef.nativeElement.getBoundingClientRect().top;
+            const clientTop = this.elementRef.nativeElement.clientTop;
+            // get vertical position for selected element
+            this.offsetTop = viewportTop + this.scroll.pos - clientTop;
+        }
+        else {
+            this.offsetTop = 0;
+        }
+    }
+}
+AnimateOnScrollDirective.ɵfac = function AnimateOnScrollDirective_Factory(t) { return new (t || AnimateOnScrollDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollService)); };
+AnimateOnScrollDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: AnimateOnScrollDirective, selectors: [["", "animateOnScroll", ""]], inputs: { offset: "offset", useScroll: "useScroll", threshold: "threshold", animationName: "animationName" } });
+AnimateOnScrollDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] },
+    { type: ScrollService }
+];
+AnimateOnScrollDirective.propDecorators = {
+    animationName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    offset: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    useScroll: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    threshold: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AnimateOnScrollDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
+        args: [{
+                selector: '[animateOnScroll]'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }, { type: ScrollService }]; }, { offset: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], useScroll: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], threshold: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], animationName: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }] }); })();
+
+class AnimateOnScrollModule {
+    static forRoot() {
+        return {
+            ngModule: AnimateOnScrollModule,
+            providers: [ScrollService]
+        };
+    }
+}
+AnimateOnScrollModule.ɵfac = function AnimateOnScrollModule_Factory(t) { return new (t || AnimateOnScrollModule)(); };
+AnimateOnScrollModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AnimateOnScrollModule });
+AnimateOnScrollModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AnimateOnScrollModule, { declarations: function () { return [AnimateOnScrollDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]]; }, exports: function () { return [AnimateOnScrollDirective]; } }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AnimateOnScrollModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
+                ],
+                declarations: [
+                    AnimateOnScrollDirective
+                ],
+                exports: [
+                    AnimateOnScrollDirective
+                ]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ng2-animate-on-scroll.js.map
+
+/***/ }),
+
+>>>>>>> parent of b2e2f02 (build - responsive)
 /***/ "x+ZX":
 /*!*******************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/refCount.js ***!
