@@ -16648,6 +16648,7 @@ class AnimationFrameAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__["As
 /***/ }),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /***/ "W70P":
 /*!**************************************************!*\
   !*** ./node_modules/skrollr/dist/skrollr.min.js ***!
@@ -16661,6 +16662,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! skrollr 0.6.26 (2014-06-08) | Alexander Pr
 
 /***/ }),
 
+=======
+>>>>>>> parent of b2e2f02 (build - responsive)
 =======
 >>>>>>> parent of b2e2f02 (build - responsive)
 /***/ "WMd4":
@@ -73638,7 +73641,10 @@ function plucker(props, length) {
 /***/ }),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of b2e2f02 (build - responsive)
 /***/ "wR1u":
 /*!*******************************************************************************************!*\
   !*** ./node_modules/ng2-animate-on-scroll/__ivy_ngcc__/fesm2015/ng2-animate-on-scroll.js ***!
@@ -73885,6 +73891,9 @@ AnimateOnScrollModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
 
 /***/ }),
 
+<<<<<<< HEAD
+>>>>>>> parent of b2e2f02 (build - responsive)
+=======
 >>>>>>> parent of b2e2f02 (build - responsive)
 /***/ "x+ZX":
 /*!*******************************************************************!*\

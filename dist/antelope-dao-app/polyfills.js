@@ -8,7 +8,11 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! E:\web development\Angular Js Projects\antelopeWebApp\src\polyfills.ts */"hN/g");
+=======
+module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Documents\GitHub\antelopeWebApp\src\polyfills.ts */"hN/g");
+>>>>>>> parent of b2e2f02 (build - responsive)
 =======
 module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Documents\GitHub\antelopeWebApp\src\polyfills.ts */"hN/g");
 >>>>>>> parent of b2e2f02 (build - responsive)
