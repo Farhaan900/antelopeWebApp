@@ -10,7 +10,10 @@ export class AppComponent {
   title = 'antelope-dao-app';
 
   public ngOnInit(): void {
-      skrollr.init();
+      var s = skrollr.init();
+      if(s.isMobile()){
+        s.destroy();
+      }
   }
   // public ngAfterViewInit() : void{
   //     skrollr.init().refresh();
