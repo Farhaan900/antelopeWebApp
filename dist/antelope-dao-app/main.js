@@ -448,7 +448,10 @@ class AppComponent {
         this.title = 'antelope-dao-app';
     }
     ngOnInit() {
-        skrollr__WEBPACK_IMPORTED_MODULE_0__["init"]();
+        var s = skrollr__WEBPACK_IMPORTED_MODULE_0__["init"]();
+        if (s.isMobile()) {
+            s.destroy();
+        }
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
