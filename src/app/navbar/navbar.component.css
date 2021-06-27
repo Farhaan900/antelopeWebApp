@@ -34,29 +34,35 @@ a.selected {
 }
 
 .topnav a {
-    border-radius: 20px;
-    color: #da7a27;
+    color: #F88340;
     font-weight: 400;
     float: left;
     display: block;
     text-align: center;
-    padding: 12px 14px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 30px;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
 }
 
 .topnav a:hover {
-    background-color: #eeb27d;
-    color: white;
+    background: #FBFBFD;
+    box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(62, 71, 81, 0.1);
+    border-radius: 40px;
 }
 
 .topnav a.active {
-    background-color: #e26d08;
-    color: white !important;
-}
 
+}
+.topnav .language img{
+    width: 17px;
+    height: 17px;
+}
+.topnav .burger img{
+    width: 36px;
+    height: 13px;
+}
 .topnav .icon {
     display: none;
 }

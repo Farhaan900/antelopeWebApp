@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/animate.css';
 
+body{
+    background-color: #FBFBFD;
+}
 .animated-delay-05 {
     animation-delay: 500ms;
     -webkit-animation-delay: 500ms;

@@ -1,18 +1,15 @@
 .header {
-    height: 180px;
+    /* height: 180px; */
     display: flex;
+    padding: 1rem 2rem 0 2rem;
     justify-content: space-between;
-}
-
-.logo {
-    width: 250px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+
 .logo img {
-    height: 160px;
+    height: 58px;
+    width: 207px;
 }
 
 @media screen and (max-width: 450px) {
@@ -23,6 +20,6 @@
         width: 150px;
     }
     .logo img {
-        height: 100px;
+        height: 60px;
     }
 }
