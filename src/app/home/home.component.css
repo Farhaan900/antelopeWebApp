@@ -7,13 +7,41 @@
     height: calc(100vh - 200px);
 }
 
-.home-container .left {
-    width: 45vw;
+.home-container .center {
+    width: 100%;
+    padding: 0 4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
+.home-container .center h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0;
+    text-align: center;
+}
+.home-container .center .header-item{
+    /* margin: 1rem; */
+}
+.home-container .center .head-1{
+    color: #3E4751;
+}
+.home-container .center .head-2{
+    color: #FE815F;
+    margin-bottom: 1.25rem;
+}
+.home-container .center .description{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.015em;
 
+    color: #3E4751;
+}
 .home-container .right {
     width: 55vw;
 }
