@@ -53,7 +53,9 @@ a.selected {
 }
 
 .topnav a.active {
-
+    background: #FBFBFD;
+    box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(62, 71, 81, 0.1);
+    border-radius: 40px;
 }
 .topnav .language img{
     width: 17px;
