@@ -35,6 +35,7 @@ a.selected {
 
 .topnav a {
     color: #F88340;
+    outline: none;
     font-weight: 400;
     float: left;
     display: block;

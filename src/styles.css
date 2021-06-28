@@ -2,11 +2,12 @@
 @import './assets/animate.css';
 
 body{
-    background-color: #FBFBFD;
+    margin: 0;
 }
 ::-webkit-scrollbar{
     display: none;
 }
+
 .animated-delay-05 {
     animation-delay: 500ms;
     -webkit-animation-delay: 500ms;

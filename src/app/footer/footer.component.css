@@ -1,52 +1,60 @@
-.footer-component-wrapper {
-    min-height: 210px;
-    margin-top: 50px;
-    padding: 30px;
+.footer-component-wrapper{
+    margin: 8rem 3rem 2rem 3rem;
+}
+
+.divider{
+    background: #FBFBFD;
+    height: 1px;
+    /* border: 1px solid #FBFBFD; */
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.45), 4px 4px 8px rgba(0, 0, 0, 0.25);
+    transform: rotate(0.04deg);
+    margin-bottom: 3rem;
+}
+
+.body{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    color: white;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(115deg, rgba(255, 255, 255, 1) 0%, rgba(250, 202, 161, 1) 1%, rgba(225, 147, 79, 1) 12%, rgba(218, 123, 40, 1) 34%);
+    align-items: flex-start;
 }
 
-.footer-component-wrapper>div {
-    padding: 10px;
+.site-map ul{
+    list-style: none;
+    margin: 0;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+.site-map li{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 180%;
+    /* or 43px */
+
+    text-align: justify;
+    letter-spacing: 0.015em;
+
+    color: #3E4751;
 }
 
-.links a {
-    color: white;
-    text-decoration: none;
-    margin-top: 5px;
-    font-size: 14px;
-}
+.title span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 180%;
+    /* or 43px */
 
-.socials-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    text-align: justify;
+    letter-spacing: 0.015em;
 
-.social-links-container {
-    height: 30px;
+    color: #3E4751;
 }
-
-button.newsletter-signup {
-    background-color: #da7b28;
-    color: white;
-    max-width: 300px;
-    height: 35px;
-    margin-top: 20px;
-    border: 2px solid white;
-    border-radius: 20px;
-    font-size: 14px;
-    margin-bottom: 30px;
-    cursor: pointer;
+.icons{
+    margin-top: 1.2rem;
+}
+.social-icons img{
+    height: 2rem;
+    margin-right: 1rem;
+}
+.community img{
+    height: 2.5rem;
+    margin-right: 0.5rem;
 }

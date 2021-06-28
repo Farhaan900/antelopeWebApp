@@ -2,3 +2,9 @@
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
+.container{
+    background: #FBFBFD;
+    max-width: 1440px;
+    margin: auto;
+    width: auto;
+}

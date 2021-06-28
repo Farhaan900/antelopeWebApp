@@ -1393,7 +1393,7 @@
   animation-name: slideOutUp;
 }
 body{
-    background-color: #FBFBFD;
+    margin: 0;
 }
 ::-webkit-scrollbar{
     display: none;
