@@ -13,7 +13,7 @@
     text-align: center;
 
     color: #3E4751;
-
+    margin: 0 0 5rem 0;
 }
 .team-container{
     width: 1157px;
@@ -48,7 +48,7 @@
     height: 100%;
     width: 100%;
 }
-.team-name, .team-position{
+.team-name,.team-position{
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -56,7 +56,6 @@
     line-height: 145%;
     /* or 44px */
 
-    text-align: center;
     letter-spacing: 0.015em;
 
 }
@@ -92,10 +91,11 @@
 .advisor-details{
     margin-left: 0.5rem;
 }
-.advisor .advisor-details .team-name,.team-position{
+.advisor .advisor-details .team-name{
     text-align: left;
 }
 .advisor .advisor-details .team-position{
+    text-align: left;
     font-size: 20px;
 }
 .advisors-box img{

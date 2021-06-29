@@ -70,10 +70,11 @@
     letter-spacing: 0.015em;
 
     color: #FFFFFF;
+    transition: 0.5s;
 
 }
 .home-container .waitlist button:active{
-    transform: scale(0.98);
+    transform: scale(0.8);
 }
 
 .home-container .center .head-1{

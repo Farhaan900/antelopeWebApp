@@ -22,7 +22,8 @@
     margin: 0;
 }
 
-.site-map li{
+.site-map a{
+    text-decoration: none;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -31,10 +32,14 @@
 
     text-align: justify;
     letter-spacing: 0.015em;
-
     color: #3E4751;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
 }
-
+.site-map a:hover{
+    background: #FBFBFD;
+    box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(62, 71, 81, 0.1);
+    border-radius: 40px;
+}
 .title span{
     font-style: normal;
     font-weight: bold;
@@ -46,12 +51,24 @@
     letter-spacing: 0.015em;
 
     color: #3E4751;
+    padding-left: 1rem;
 }
-.icons{
+/* .icons{
     margin-top: 1.2rem;
+} */
+.icons img{
+    padding: 1rem;
+}
+.icons img:hover{
+    cursor: pointer;
+    background: #FBFBFD;
+    box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(62, 71, 81, 0.1);
+    border-radius: 50%;
 }
 .social-icons img{
+    width: 2rem;
     height: 2rem;
+    
     margin-right: 1rem;
 }
 .community img{

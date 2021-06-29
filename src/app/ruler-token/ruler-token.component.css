@@ -2,7 +2,7 @@
     margin: 8rem 3rem 8rem 3rem;
 
 }
-
+  
 .title {
     font-style: normal;
     font-weight: bold;
@@ -60,6 +60,7 @@
     letter-spacing: 0.015em;
 
     color: #FE815F;
+    padding: 0 0 1.5rem 0;
 }
 .card-body p{
     font-style: normal;

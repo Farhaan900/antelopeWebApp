@@ -43,4 +43,9 @@
     background: #F88340;
     box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.13), 10px 10px 20px rgba(62, 71, 81, 0.26);
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.news-letter .button button:active{
+    transform: scale(0.8);
 }

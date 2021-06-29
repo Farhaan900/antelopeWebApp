@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/animate.css';
-
-body{
+@font-face {
+    font-family: Lato;
+    src: url('./assets/fonts/Lato-Regular.ttf');
+}
+*{
     margin: 0;
+    font-family: Lato;
+}
+html{
+    background: #FBFBFD;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -67,3 +74,5 @@ body{
 .carousel-dot{
     border: 2px solid black !important;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
