@@ -6,12 +6,11 @@
     align-items: center;
 }
 
-
 .logo img {
     /* height: 58px; */
     width: 207px;
+    cursor: pointer;
 }
-
 @media screen and (max-width: 450px) {
     .header {
         height: 120px;

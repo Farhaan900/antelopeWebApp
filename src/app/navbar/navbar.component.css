@@ -27,9 +27,15 @@
     width: 17px;
     height: 17px;
 }
+.topnav .language img:hover{
+    transform: scale(1.2);
+}
 .topnav .burger img{
     width: 36px;
     height: 13px;
+}
+.topnav .burger img:hover{
+    transform: scale(1.2);
 }
 .topnav .icon {
     display: none;
