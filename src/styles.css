@@ -4,9 +4,13 @@
     font-family: Lato;
     src: url('./assets/fonts/Lato-Regular.ttf');
 }
+@font-face {
+    font-family: Verdana;
+    src: url('./assets/fonts/verdana.ttf');
+}
 *{
     margin: 0;
-    font-family: Lato;
+    font-family: Verdana;
 }
 html{
     background: #FBFBFD;

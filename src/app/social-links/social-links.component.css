@@ -61,3 +61,7 @@
 .tab-content .image img{
     width: 100%;
 }
+
+.tab-group .tab .label{
+    color : #f00;
+}

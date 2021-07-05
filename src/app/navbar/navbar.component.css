@@ -1,40 +1,10 @@
-/* nav{
-    padding: 15px;
-    padding-right: 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-nav a {
-    color: #da7a27;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-nav a:hover {
-    background-color: #eeb27d;
-    color: white;
-}
-
-a.selected {
-    background-color:#e26d08;
-    color: white !important;
-} */
 
 .topnav {
     overflow: hidden;
 }
 
 .topnav a {
-    color: #F88340;
+    color: #3E4751;
     outline: none;
     font-weight: 400;
     float: left;
@@ -48,15 +18,10 @@ a.selected {
 }
 
 .topnav a:hover {
-    background: #FBFBFD;
-    box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(62, 71, 81, 0.1);
-    border-radius: 40px;
+    color: #F88340;
 }
-
-.topnav a.active {
-    background: #FBFBFD;
-    box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(62, 71, 81, 0.1);
-    border-radius: 40px;
+.topnav a:active{
+    color: #F88340;
 }
 .topnav .language img{
     width: 17px;
@@ -98,7 +63,7 @@ a.selected {
         background-color: rgb(239 235 227);
     }
     .topnav.responsive a:hover {
-        background-color: #eeb27d;
-        color: white;
+        /* background-color: #eeb27d;
+        color: white; */
     }
 }
