@@ -3617,9 +3617,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
     font-family: Lato;
     src: url('Lato-Regular.ttf');
 }
+@font-face {
+    font-family: Verdana;
+    src: url('verdana.ttf');
+}
 *{
     margin: 0;
-    font-family: Lato;
+    font-family: Verdana;
 }
 html{
     background: #FBFBFD;

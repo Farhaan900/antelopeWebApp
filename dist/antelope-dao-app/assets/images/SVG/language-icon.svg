@@ -1,9 +1,9 @@
 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="17">
-<rect x="0.776489" y="0.333252" width="17.7778" height="16.1616" fill="url(#pattern0)"/>
+<rect x="0.776367" y="0.332031" width="17.7778" height="16.1616" fill="url(#pattern0)"/>
 </mask>
 <g mask="url(#mask0)">
-<rect x="0.776489" y="0.333252" width="17.7778" height="16.1616" fill="#F88340"/>
+<rect x="0.776367" y="0.332031" width="17.7778" height="16.1616" fill="#3E4751"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
