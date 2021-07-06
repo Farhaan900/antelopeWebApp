@@ -1,51 +1,88 @@
-.community-component-container{
-    margin: 16rem 3rem 16rem 3rem;
+@font-face {
+    font-family: Lucida-Grande;
+    src: url('../../assets/fonts/LucidaGrande.ttf');
 }
-
+.community-component-container{
+    background: url('../../assets/images/SVG/subscribe-eclipse.svg') no-repeat;
+    /* background-position: 50% 35%; */
+    background-size: 100% 700px;
+    height: 800px;
+    width: 100%;
+}
 .news-letter-container{
-    background: url("../../assets/images/newsletter-background.svg") no-repeat center;
+    background: url("../../assets/images/SVG/subscribe-background.svg") no-repeat;
+    background-position: center center;
     background-size: contain;
-    height: 335px;
+    height: 100%;
+    width: 1200px;
+    margin: auto;
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0 0 0 6.5rem;
 }
-.news-letter .info{
+.bell{
+    margin: -18rem 0 0 -9rem ;
+}
+.bell img{
+    height: 8.4rem;
+    width: 8.4rem;
+}
+.content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.news-letter .info span{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 58px;
-    /* identical  to box height */
-
-    text-align: center;
-
-    color: #FFFFFF;
-    margin: 0 .5rem 0 0;
+.content .mail-icon{
+    height: 9.6rem;
+    width: 9.6rem;
+    margin: 1rem 0 1rem 6rem;
 }
-.news-letter .button button{
-    outline: none;
-    border : none;   
+.content .title{
+    width: 30%;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-    padding: 1rem 6.5rem 1rem 6.5rem;
-    margin: 1rem 0 0 0;
-    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
 
-    color: #FFFFFF;
-
-    background: #F88340;
+    color: #3E4751;
+}
+.content .input-box{
+    border: none;
+    box-sizing: border-box;
     box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.13), 10px 10px 20px rgba(62, 71, 81, 0.26);
     border-radius: 10px;
-    transition: 0.5s;
+    filter: drop-shadow(-10px -10px 20px rgba(255, 255, 255, 0.13)), drop-shadow(10px 10px 20px rgba(62, 71, 81, 0.26));
+    border-radius: 10px;
+    width: 410px;
+    height: 48px;
+    outline: none;
+    margin-right: 2rem;
+    padding: 0 0 0 1rem;
 }
 
-.news-letter .button button:active{
-    transform: scale(0.8);
+.content .input-box::placeholder{
+    text-align: left;
+    color: #3e4751d3;
+    padding: 0 0 0 0.5rem;
 }
+
+.content button{
+    font-family: Lucida-Grande;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.6rem;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #FBFAF9;
+    padding: 0.2rem 1.5rem;
+    background: #F47A1B;
+    border-radius: 40px;
+}
+.content button{
+    transform: scale(1.5);
+}
+
