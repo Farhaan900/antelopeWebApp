@@ -1,0 +1,56 @@
+.about-component{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 8rem 0 0 0;
+    background: url('../../assets/images/solutions-background.png') no-repeat;
+    background-position: right top; 
+}
+.solutions-section{
+    margin: auto;
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-between;
+}
+.image{
+    width: 22%;
+}
+.content{
+    width: 60%;
+}
+.content .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.text .title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 73px;
+    /* identical to box height */
+    margin-bottom: 0.5rem;
+    color: #3E4751;
+}
+.text .title-sub{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 145%;
+    /* or 49px */
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.015em;
+
+    color: #F47A1B;
+}
+.text .desc{
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 18px;
+    line-height: 145%;
+    /* or 26px */
+
+    letter-spacing: 0.015em;
+    color: #3E4751;
+    opacity: 0.8;
+}

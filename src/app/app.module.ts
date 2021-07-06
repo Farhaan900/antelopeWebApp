@@ -13,13 +13,14 @@ import { AboutComponent } from './about/about.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TransactionsTestComponent } from './transactions-test/transactions-test.component';
-import { RulerTokenComponent } from './ruler-token/ruler-token.component';
 import { EngineeringComponent } from './engineering/engineering.component';
 
 import { TeamComponent } from './team/team.component';
 import { CommunityComponent } from './community/community.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
+import { EcosystemComponent } from './ecosystem/ecosystem.component';
+import { SolutionsComponent } from './solutions/solutions.component';
 
 
 @NgModule({
@@ -30,12 +31,13 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     NavbarComponent,
     AboutComponent,
     TransactionsTestComponent,
-    RulerTokenComponent,
     EngineeringComponent,
     TeamComponent,
     CommunityComponent,
     FooterComponent,
     SocialLinksComponent,
+    EcosystemComponent,
+    SolutionsComponent,
 
   ],
   imports: [
@@ -48,7 +50,6 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
-      {path: 'ruler-token', component: RulerTokenComponent},
     ]),
   ],
   providers: [],

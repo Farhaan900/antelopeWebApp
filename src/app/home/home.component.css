@@ -5,11 +5,11 @@
 .home-container {
     display: flex;
     height: calc(100vh - 120px);
-    margin: 0 3rem 0 3rem;
+    margin: auto;
+    max-width: 1240px;
 }
 .home-container .center {
     width: 100%;
-    padding: 0 4rem;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -19,8 +19,24 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 58px;
-    margin: 0;
     text-align: center;
+}
+.home-container .center span{
+    font-family: Ludida-Grande;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    /* ◇ Light / Dark */
+
+    color: #263238;
+
+    opacity: 0.8;
 }
 .home-container .waitlist{
     margin : 4rem 0 0 0;

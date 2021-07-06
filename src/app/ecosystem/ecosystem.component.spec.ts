@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RulerTokenComponent } from './ruler-token.component';
+import { EcosystemComponent } from './ecosystem.component';
 
-describe('RulerTokenComponent', () => {
-  let component: RulerTokenComponent;
-  let fixture: ComponentFixture<RulerTokenComponent>;
+describe('EcosystemComponent', () => {
+  let component: EcosystemComponent;
+  let fixture: ComponentFixture<EcosystemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RulerTokenComponent ]
+      declarations: [ EcosystemComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RulerTokenComponent);
+    fixture = TestBed.createComponent(EcosystemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
