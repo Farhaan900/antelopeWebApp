@@ -4,14 +4,15 @@
 
 .title h1{
     font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 58px;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
     /* identical to box height */
 
     text-align: center;
 
     color: #3E4751;
+
 
     margin: 0 0 4rem 0;
 }
@@ -22,9 +23,9 @@
     margin: 0 0 6rem 0;
 }
 .image-frame {
-    background: #FBFBFD;
+    background: #FBFAF9;
     box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(62, 71, 81, 0.3);
-    border-radius: 10px;
+    border-radius: 15px;
     align-items: center;
     justify-content: center;
     width: 300px;
