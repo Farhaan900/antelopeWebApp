@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-legacy',
+  templateUrl: './legacy.component.html',
+  styleUrls: ['./legacy.component.css']
+})
+export class LegacyComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  id:any  = "access"
+  tabChange(ids:any){
+    console.log(ids);
+    this.id = ids;
+  }
+}

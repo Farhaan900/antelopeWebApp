@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { EcosystemComponent } from './ecosystem/ecosystem.component';
 import { SolutionsComponent } from './solutions/solutions.component';
+import { LegacyComponent } from './legacy/legacy.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SolutionsComponent } from './solutions/solutions.component';
     SocialLinksComponent,
     EcosystemComponent,
     SolutionsComponent,
+    LegacyComponent,
 
   ],
   imports: [

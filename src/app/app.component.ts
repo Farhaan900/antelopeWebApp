@@ -1,5 +1,5 @@
 import { Component , OnInit } from '@angular/core';
-import * as skrollr from 'skrollr';
+// import * as skrollr from 'skrollr';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,10 @@ export class AppComponent {
   title = 'antelope-dao-app';
 
   public ngOnInit(): void {
-      var s = skrollr.init();
-      if(s.isMobile()){
-        s.destroy();
-      }
+      // var s = skrollr.init();
+      // if(s.isMobile()){
+      //   s.destroy();
+      // }
 
   }
   // public ngAfterViewInit() : void{
