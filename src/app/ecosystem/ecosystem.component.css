@@ -5,7 +5,7 @@
 .ecosystem{
     margin: 8rem 0 8rem 0;
     /* height: 100vh; */
-    background: url(../../assets/images/SVG/ecosystem-background.svg) no-repeat;
+    background: url('../../assets/images/SVG/ecosystem-background.svg') no-repeat;
     background-position: 55% top;
 }
 .originators{
@@ -24,7 +24,7 @@
 }
 .originators .image{
     width: 22%;
-    margin-top: -5rem;
+    margin-top: -7rem;
 }
 .originators .image img{
     width: 16rem;
