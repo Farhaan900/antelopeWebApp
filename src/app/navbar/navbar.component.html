@@ -1,14 +1,15 @@
 <div class="topnav" id="myTopnav">
-    <a routerLink="/first-component" routerLinkActive="active" class="active">Home</a>
-    <a (click)="scrollToElement('about')" routerLinkActive="active">About US</a>
-    <a (click)="scrollToElement('community')" routerLinkActive="active">Community</a>
-    <a href="javascript:void(0);" class="language" onclick="myFunction()">
-        <img src="assets/images/SVG/language-icon.png">
-    </a>
-    <a href="javascript:void(0);" class="burger" onclick="myFunction()">
-        <img src="assets/images/SVG/burger-icon.svg">
-    </a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
+    <div class="menu-items" [class.hide]="state === 'hide'">
+        <a routerLink="/first-component" routerLinkActive="active" class="active">Home</a>
+        <a  routerLinkActive="active">About US</a>
+        <a  routerLinkActive="active">Community</a>
+    </div>
+    <div class="menu-icons">
+        <a href="javascript:void(0);" class="language" >
+            <img src="assets/images/SVG/language-icon.png">
+        </a>
+        <a href="javascript:void(0);" class="burger" (click)="toggle()">
+            <img src="assets/images/SVG/burger-icon.svg">
+        </a>
+    </div>
 </div>

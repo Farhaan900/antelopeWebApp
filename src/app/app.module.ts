@@ -22,6 +22,7 @@ import { SocialLinksComponent } from './social-links/social-links.component';
 import { EcosystemComponent } from './ecosystem/ecosystem.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { LegacyComponent } from './legacy/legacy.component';
+import { WaveComponent } from './wave/wave.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { LegacyComponent } from './legacy/legacy.component';
     EcosystemComponent,
     SolutionsComponent,
     LegacyComponent,
+    WaveComponent,
 
   ],
   imports: [

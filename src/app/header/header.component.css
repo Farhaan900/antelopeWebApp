@@ -14,13 +14,10 @@
     cursor: pointer;
 }
 @media screen and (max-width: 450px) {
-    .header {
-        height: 120px;
-    }
-    .logo {
-        width: 150px;
-    }
-    .logo img {
-        height: 60px;
-    }
+   .logo img{
+       width: 100px;
+   }
+   .header{
+       align-items: flex-start;
+   }
 }

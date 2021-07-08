@@ -11,12 +11,19 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  state : any  = "hide";
+  toggle(){
+    if(this.state == "hide"){
+      this.state = "";
+    }else{
+      this.state = "hide";
+    }
+  }
   scrollToElement(element: any): void {
-    console.log("scrolling to - ")
-    let el = document.getElementById(element);
-    console.log(el)
-    el?.scrollIntoView({behavior: "smooth", inline: "nearest"});
-}
+      console.log("scrolling to - ")
+      let el = document.getElementById(element);
+      console.log(el)
+      el?.scrollIntoView({behavior: "smooth", inline: "nearest"});
+  }
 
 }

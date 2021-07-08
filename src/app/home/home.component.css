@@ -112,6 +112,41 @@
     /* ◇ Light / Dark */
 
     color: #263238;
-
+    padding: 0 4rem;
     opacity: 0.8;
+}
+
+@media screen and (max-width : 450px) {
+    .home-container{
+        height: 60vh;
+        padding: 0 3rem;
+    }
+    .home-container .waitlist{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-container .center h1{
+        font-size: 25px;
+        line-height: 30px;  
+    }
+    .home-container .center .head-2{
+        margin: 0 0 0.5rem 0;
+    }
+    .home-container .center .description{
+        font-size: 8px;
+        line-height: 145%;
+        padding: 0 0.5rem;
+    }
+    .home-container .waitlist{
+        margin: 1rem 0 0 0;
+    }
+    .home-container .waitlist input{
+        width: 100%;
+        padding: 0.3rem 0;
+        margin: 0.5rem 0;
+        font-size: 0.6rem;
+    }
+    .home-container .waitlist button{
+        font-size: 0.6rem;
+    }
 }
