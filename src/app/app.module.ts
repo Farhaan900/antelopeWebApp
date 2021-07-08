@@ -23,7 +23,7 @@ import { EcosystemComponent } from './ecosystem/ecosystem.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { LegacyComponent } from './legacy/legacy.component';
 import { WaveComponent } from './wave/wave.component';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -50,6 +50,7 @@ import { WaveComponent } from './wave/wave.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    IvyCarouselModule,
     MatTabsModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},

@@ -121,3 +121,74 @@
     opacity: 0.4;
 
 }
+
+@media screen and ( max-width : 450px ) {
+    .about-component{
+       background-size: 20%;
+       background-position : center right;
+        /* height: fit-content; */
+       position: relative;
+       height: fit-content;
+       margin: 5rem 0 5rem 0;
+    }
+    .solutions-section{
+        margin: 0 2rem;
+        flex-wrap: wrap;
+        align-items: flex-start !important;
+    }
+    .content{
+        width: 50%;
+    }
+    .image{
+        margin-top: 4rem;
+        width: 45%;
+    }
+    .image img{
+        width: 136.11px;
+        height: 223px;
+    }
+    .content .text .title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .content .text .title-sub{
+        font-size: 14px;
+        line-height: 145%;
+    }
+    .content .text .desc{
+        font-size: 0.5rem;
+        line-height: 145%;
+        position: absolute;
+        margin: 27rem 1rem 0 0;  
+    }
+    .icon-card{
+        width: 25%;
+    }
+    .icon-card.card-1{
+        position: absolute;
+        margin: 0 0 0 0;
+    }
+    .icon-card.card-2{
+        position: absolute;
+        margin: 10rem 0 0 0;
+    }
+    .icon-card.card-3{
+        position: absolute;
+        margin: -12rem 0 0 12rem;
+    }
+    .icon-card.card-4{
+        position: absolute;
+        margin: 10rem 0 0 10rem;
+    }
+    .icon-card img{
+        height: 1.5rem;
+        width: 4rem;
+        margin: 0 0.8rem 0.2rem 0;
+    }
+    .icon-card .card-title{
+       font-size: 0.5rem;
+    }
+    .icon-card .card-text{
+        font-size: 0.25rem;
+     }
+}

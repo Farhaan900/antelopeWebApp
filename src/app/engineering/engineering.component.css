@@ -1,5 +1,5 @@
 .engineering-component-container{
-    margin: 8rem 3rem 8rem 3rem;
+    margin: 8rem 3rem 2rem 3rem;
 }
 
 .title h1{
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 6rem 0;
+    margin: 0 0 0 0;
 }
 .image-frame {
     background: #FBFAF9;
@@ -39,4 +39,23 @@
 
 .partners-container , .images-container{
     justify-content: space-around
+}
+
+@media screen and (max-width : 450px) {
+    .engineering-component-container{
+        margin: 2rem 1rem;
+    }
+    .title h1{
+        font-size: 25px;
+        margin: 0 0 2rem 0;
+    }
+    .image-frame{
+        width: 88px;
+        height: 37px;
+        border-radius: 6px;
+    }
+    .image-frame img{
+        height: 18px;
+        width: 66px;
+    }
 }

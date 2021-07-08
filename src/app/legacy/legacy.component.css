@@ -183,28 +183,33 @@ ul{
 
 @media screen and (max-width : 450px) {
     .legacy-container{
-        margin: 2rem 3rem;
+        margin: 4rem 3rem;
     }
     .title{
         font-size: 1.5rem;
-        padding: 0 5rem;
         line-height: 130%;
+    }
+    .title-container{
+        padding: 0 0 3rem 0; 
     }
     .web{
         display: none;
     }
     .mobile{
-        display: block;
+        display: flex;
+        align-items: center;
+        margin: 0 0.5rem;
     }
     .mobile .image-card{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 0.5rem;
     }
     .mobile .image-card .card-title{
         display: flex;
         background: #FBFBFD;
-        box-shadow: -2px -4px 20px #FFFFFF, 2px 4px 20px rgba(62, 71, 81, 0.25);
+        box-shadow: -2px -4px 20px #FFFFFF, 2px 4px 20px rgba(14, 65, 124, 0.25);
         border-radius: 5px;
         justify-content: center;
         width: fit-content;
@@ -231,7 +236,7 @@ ul{
         background: #FBFBFD;
         box-shadow: -4px 4px 20px #FFFFFF, 4px 4px 20px rgba(62, 71, 81, 0.3);
         border-radius: 10px;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1rem;
     }
     .mobile .card-body img{
         width: 8.5rem;
@@ -265,10 +270,10 @@ ul{
         align-items: center;
         margin: 0 0 0.5rem 0;
     }
-    .row-1{
+    .icon-cards .row-1{
         justify-content: space-between;
     }
-    .row-2{
+    .icon-cards .row-2{
         justify-content: center;
     }
     .icon-card img{
@@ -300,4 +305,33 @@ ul{
         width: 1.3rem !important;
         height: 1.3rem !important;
     }
+    .integrations .card-body .title{
+        font-family: Lucida-Grande;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* or 129% */
+
+        letter-spacing: 0.015em;
+
+        color: #3E4751;
+
+        opacity: 0.8;
+    }
+    .integrations .row-1{
+        margin: 0 0 0.5rem 0;
+    }
+    .integrations .row-1 p{
+        text-align: left;
+    }
+    .integrations .row-2 p{
+        text-align: right;
+    }
+    .integrations .row-2{
+        width: 100%;
+        text-align: right !important;
+    }
+    
+
 }

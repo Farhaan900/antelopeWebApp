@@ -86,3 +86,61 @@
     transform: scale(1.5);
 }
 
+@media screen and (max-width : 480px) {
+    .community-component-container{
+        height: 200px;
+        background-size: 100% 100%;
+    }
+    .news-letter-container{
+        background-position: center center;
+        background-size: contain;
+        height: 100%;
+        width: 220px;
+        margin: auto;
+        padding: 0 0 0 3rem;
+    }
+    .bell{
+        margin: -4rem 0 0 -3.5rem;
+    }
+    .bell img{
+        width: 22.92px;
+        height: 22.92px;
+    }
+    .content{
+        padding: 0;
+    }
+    .content .mail-icon{
+        width: 23px;
+        height: 23px;
+        margin: 0 0.5rem 0 1rem;
+    }
+    .content .title{
+       font-size: 9px;
+       line-height: 140%;
+    }
+    .content .input-box{
+        width: 90.49px;
+        height: 16.89px;
+        font-size: 6.0324px;
+        line-height: 7px;
+        border: 1px solid #F88340;
+        box-sizing: border-box;
+        filter: drop-shadow(-12.0648px -12.0648px 24.1296px rgba(255, 255, 255, 0.13)), drop-shadow(12.0648px 12.0648px 24.1296px rgba(62, 71, 81, 0.26));
+        border-radius: 2.41296px;
+        margin-right: 1rem;
+    }
+    
+    .content .input-box::placeholder{
+        font-size: 6.0324px;
+        line-height: 7px;
+    }
+    
+    .content button{
+        padding: 0.2rem 0.5rem;
+        font-size: 6.0324px;
+        line-height: 7px;
+        /* identical to box height */
+
+        text-align: center;
+    }
+}

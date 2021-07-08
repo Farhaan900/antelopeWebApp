@@ -104,3 +104,51 @@
     height: 2.5rem;
     width: 2.5rem;
 }
+
+@media screen and (max-width : 450px) {
+    .footer-component-wrapper{
+        max-width: 320px;
+        margin-bottom: 0.5rem;
+    }
+    .site-logo .text{
+        font-size: 6px;
+    }
+    .site-logo img{
+        height: 35px;
+        width: 35px;
+    }
+    .site-map li{
+        margin-bottom: 0.5rem;
+    }
+    .site-map a{
+        font-size: 6px;
+    }
+    .title span{
+        font-size: 6px;
+        margin-bottom: 0.2rem;
+    }
+    .icons {
+        margin-top: 0.5rem;
+    }
+    .icons img{
+        height: 7px;
+        width: 7px;
+        margin: 0 0.2rem 0 0;
+    }
+    .icons img#facebook{
+        height: 7px;
+        width: 7px;
+    }
+    .icons img#instagram{
+        height: 7px;
+        width: 7px;
+    }
+    .icons img#reddit{
+        height: 7px;
+        width: 7px;
+    }
+    .icons img#twitter{
+        height: 7px;
+        width: 7px;
+    }
+}
