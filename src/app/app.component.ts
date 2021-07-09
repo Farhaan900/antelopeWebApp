@@ -8,7 +8,6 @@ import { Component , OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'antelope-dao-app';
-
   public ngOnInit(): void {
       // var s = skrollr.init();
       // if(s.isMobile()){

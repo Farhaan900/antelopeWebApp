@@ -3,15 +3,16 @@
 }
 
 .title h1{
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--font-large);
     line-height: 49px;
     /* identical to box height */
 
     text-align: center;
 
-    color: #3E4751;
+    color: var(--secondary-color);
 
 
     margin: 0 0 4rem 0;
@@ -23,8 +24,8 @@
     margin: 0 0 0 0;
 }
 .image-frame {
-    background: #FBFAF9;
-    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(62, 71, 81, 0.3);
+    background: var(--background-color);
+    box-shadow : var(--box-shadow);
     border-radius: 15px;
     align-items: center;
     justify-content: center;

@@ -13,8 +13,8 @@
     max-width: 1240px;
     width: 50%;
     display: flex;
-    background: #FBFAF9;
-    box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
     border-radius: 1rem;
     padding: 1rem 0 1rem 2rem;
     /* margin-bottom: 8rem; */
@@ -31,28 +31,29 @@
     height: 12rem;
 }
 .originators .content .title{
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--font-large);
     line-height: 145%;
     /* or 58px */
 
     letter-spacing: 0.015em;
 
-    color: #F47A1B;
+    color: var(--primary-color);
 }
 .originators .content p{
     margin-top : 0.5rem;
-    font-family: Lucida-Grande;
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--font-x-small);
     line-height: 167%;
     /* or 23px */
 
     letter-spacing: 0.015em;
 
-    color: #3E4751;
+    color: var(--secondary-color);
 
     opacity: 0.8;
 }
@@ -70,20 +71,20 @@
     width: 60%;
     display: flex;
     justify-content: flex-end;
-    background: #FBFAF9;
-    box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
     border-radius: 0 88px 88px 0;
     padding: 2rem 2rem 2rem 0;
 }
 .section-heading .section-title{
-    font-family: Verdana;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: var(--font-x-large);
     line-height: 73px;
     text-align: right;
 
-    color: #3E4751;
+    color: var(--secondary-color);
 }
 .section-heading img{
     padding-left: 4rem;
@@ -94,36 +95,36 @@
 .liquidity-providors{
     width: 30%;
     margin-right: 2rem;
-    background: #FBFAF9;
-    box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
     border-radius: 15px;
     padding: 2rem 1rem 1.5rem 2rem;
 }
 
 .liquidity-providors .content .title{
-    font-family: Verdana;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--font-large);
     line-height: 145%;
     /* or 58px */
 
     letter-spacing: 0.015em;
 
-    color: #F47A1B;
+    color: var(--primary-color);
 }
 
 .liquidity-providors .content p{
-    font-family: Lucida-Grande;
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--font-x-small);
     line-height: 167%;
     /* or 23px */
 
     letter-spacing: 0.015em;
 
-    color: #3E4751;
+    color: var(--secondary-color);
 
     opacity: 0.8;
 }
@@ -132,37 +133,37 @@
     max-width: 1240px;
     margin: 0 0 0 8rem;
     width: 50%;
-    background: #FBFAF9;
-    box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
     border-radius: 15px;
     padding: 2.5rem 0 1rem 2rem 
 }
 
 .service-institutions .content .title{
-    font-family: Verdana;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--font-large);
     line-height: 145%;
     /* identical to box height, or 58px */
 
     letter-spacing: 0.015em;
 
-    color: #F47A1B;
+    color: var(--primary-color);
 }
 
 .service-institutions .content p{
     width: 82%;
-    font-family: Lucida-Grande;
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--font-x-small);
     line-height: 167%;
     /* or 23px */
 
     letter-spacing: 0.015em;
 
-    color: #3E4751;
+    color: var(--secondary-color);
 
     opacity: 0.8;
 }

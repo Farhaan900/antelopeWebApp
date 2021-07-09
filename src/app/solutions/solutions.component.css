@@ -35,33 +35,35 @@
 .text .title{
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-family: var(--primary-font);
+    font-size: var(--font-x-large);
     line-height: 73px;
     /* identical to box height */
     margin-bottom: 0.5rem;
-    color: #3E4751;
+    color: var(--secondary-color);
 }
 .text .title-sub{
     font-style: normal;
     font-weight: normal;
-    font-size: 34px;
+    font-style: var(--primary-font);
+    font-size: var(--font-medium);
     line-height: 145%;
     /* or 49px */
     margin-bottom: 0.5rem;
     letter-spacing: 0.015em;
 
-    color: #F47A1B;
+    color: var(--primary-color);
 }
 .text .desc{
-    font-family: Lucida-Grande;
+    font-family: var(--secondary-font);
     font-style: normal;
     /* font-weight: bold; */
-    font-size: 18px;
+    font-size: var(--font-body);
     line-height: 145%;
     /* or 26px */
 
     letter-spacing: 0.015em;
-    color: #3E4751;
+    color: var(--secondary-color);
     opacity: 0.8;
     padding: 0 0 1.5rem 0;
 }
@@ -76,8 +78,8 @@
     align-items: center;
     justify-content: space-between;
     width: 20%;
-    background: #FBFAF9;
-    box-shadow: -5px -5px 20px 3px rgba(255, 255, 255, 0.8), 7px 6px 20px rgba(62, 71, 81, 0.13);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
     border-radius: 15px;
     padding: 0.8rem 0.5rem
 }
@@ -89,34 +91,34 @@
 }
 
 .icon-card .card-title{
-    font-family: Lucida-Grande;
+    font-family:var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--font-x-small);
     line-height: 145%;
     /* or 20px */
 
     text-align: center;
     letter-spacing: 0.015em;
 
-    color: #3E4751;
+    color : var(--secondary-color);
 
     opacity: 0.2rem 1rem;
     /* padding: 0.3rem; */
 }
 
 .icon-card .card-text{
-    font-family: Lucida-Grande;
+    font-family: var(--secondary-color);
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    font-size: var(--font-x-small);
     line-height: 130%;
     /* or 13px */
 
     text-align: center;
     letter-spacing: 0.04em;
     padding: 0.2rem 1rem;
-    color: #3E4751;
+    color: var(--secondary-color);
 
     opacity: 0.4;
 

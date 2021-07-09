@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-legacy',
   templateUrl: './legacy.component.html',
-  styleUrls: ['./legacy.component.css']
+  styleUrls: ['./legacy.component.css'],
+  providers : [Globals]
 })
 export class LegacyComponent implements OnInit {
+  g: Globals;
 
-  constructor() { }
+  constructor(public globals: Globals){
+      this.g = globals;
+  }
+  
 
   ngOnInit(): void {
+    console.log(this.g.name)
   }
   id:any  = "access"
   tabChange(ids:any){

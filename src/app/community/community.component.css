@@ -40,12 +40,13 @@
 }
 .content .title{
     width: 30%;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--font-large);
     line-height: 49px;
 
-    color: #3E4751;
+    color: var(--secondary-color);
 }
 .content .input-box{
     border: none;
@@ -68,22 +69,24 @@
 }
 
 .content button{
-    font-family: Lucida-Grande;
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: 0.6rem;
+    font-size: var(--secondary-color);
     line-height: 18px;
     align-items: center;
     text-align: center;
     outline: none;
     border: none;
-    color: #FBFAF9;
-    padding: 0.2rem 1.5rem;
-    background: #F47A1B;
+    color: var(--background-color);
+    padding: 0.5rem 1.6rem;
+    background : var(--primary-color);
     border-radius: 40px;
+    transition: ease 0.5s;
+    cursor: pointer;
 }
-.content button{
-    transform: scale(1.5);
+.content button:active{
+    transform: scale(0.8);
 }
 
 @media screen and (max-width : 480px) {

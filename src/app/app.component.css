@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Verdana;
+    src: url('../assets/fonts/verdana.ttf');
+}
+@font-face {
+    font-family: Merri;
+    src: url('../assets/fonts/Merriweather-Regular.ttf');
+}
+@font-face {
+    font-family: Lucida;
+    src: url('../assets/fonts/LucidaGrande.ttf');
+}
 * {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
@@ -5,6 +17,22 @@
 .container{
     margin: auto;
     width: auto;
-    background-color: #FBFAF9;
+    background-color: var(--background-color);
     /* max-width: 1440px; */
+}
+:host{
+  --primary-color : #F47A1B;
+  --secondary-color :#3E4751;
+  --background-color :#FBFAF9;
+  /* --box-shadow: -5px -5px 20px 3px rgba(2, 2, 2, 0.8), 7px 6px 20px rgba(255, 255, 255, 0.13), inset 6px 7px 22px rgba(255, 255, 255, 0.03); */
+  --box-shadow : -5px -5px 20px 3px rgba(255, 255, 255, 0.8), 7px 6px 20px rgba(62, 71, 81, 0.13), inset 6px 7px 22px rgba(0, 0, 0, 0.03);
+  --font-x-large : 60px;
+  --font-large :  40px;
+  --font-medium : 34px;
+  --font-small : 18px;
+  --font-x-small : 14px;
+  --font-xx-small : 10px;
+  --font-body : 18px;
+  --primary-font : Merri;
+  --secondary-font : Lucida; 
 }

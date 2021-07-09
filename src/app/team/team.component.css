@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-around;
     background: #FBFBFD;
-    box-shadow: 10px 10px 20px rgba(62, 71, 81, 0.3);
+    box-shadow: var(--box-shadow);
     padding: 5rem 0 8rem 0;
     /* border-radius: 20px; */
     margin: 0 0 8rem 0;
@@ -35,14 +35,14 @@
     border-radius: 50%;
     background: #FBFBFD;
     margin: 0 0 2.5rem 0;
-    box-shadow: -11.6015px -11.6015px 23.203px #FFFFFF, 11.6015px 11.6015px 23.203px #F3F3F3, inset -9.28119px -9.28119px 18.5624px #FFFFFF, inset 9.28119px 9.28119px 18.5624px #E0E1E3;
+    box-shadow: var(--box-shadow);
 }
 .img-inner-circle{
     border-radius: 50%;
     height: 155px;
     width: 155px;
     background: #FBFBFD;
-    box-shadow: -8.90253px -8.90253px 17.8051px #FFFFFF, 8.90253px 8.90253px 17.8051px #DADADA;
+    box-shadow: var(--box-shadow);
 }
 .team-card img{
     height: 100%;
@@ -81,7 +81,7 @@
     max-width: 1157px;
     height: 408px;
     background: #FBFBFD;
-    box-shadow:10px 10px 20px rgba(62, 71, 81, 0.3);
+    box-shadow: var(--box-shadow);
     padding: 0 6.5rem 0 6.5rem;
 }
 .advisor{
@@ -106,7 +106,7 @@
     width: 4px;
     height: 365px;
     background-color:  #F88340;
-    box-shadow: inset -10px -10px 20px #FFFFFF;
+    box-shadow: var(--box-shadow);
 }
 
 @media screen and (max-width : 450px) {
