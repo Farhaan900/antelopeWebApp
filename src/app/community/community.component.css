@@ -48,6 +48,7 @@
     border-radius: 10px;
     filter: drop-shadow(-10px -10px 20px rgba(255, 255, 255, 0.13)), drop-shadow(10px 10px 20px rgba(62, 71, 81, 0.26));
     border-radius: 10px;
+    font-size: var(--font-x-small);
     width: 410px;
     height: 48px;
     outline: none;
@@ -84,35 +85,37 @@
 
 @media screen and (max-width : 480px) {
     .community-component-container{
-        height: fit-content;
-        background-size: 100% 100%;
+        background: url('../../assets/images/SVG/Mobile-news-letter.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 380px;
+        width: 100%;
     }
     .news-letter-container{
-        background-position: center center;
-        background-size: contain;
-        height: 100%;
-        width: 220px;
-        margin: auto;
-        padding: 0 0 0 3rem;
+        width: 233px;
     }
     .bell{
-        margin: 0;
+        margin: -35% 0 0 -10%;
     }
     .bell img{
-        width: 22.92px;
-        height: 22.92px;
+        width: 46px;
+        height: 46px;
     }
     .content{
         padding: 0;
     }
     .mail img{
-        width: 1rem;
-        height: 1rem;
+        width: 56px;
+        height: 56px;
         margin: 0 0.5rem 0 1rem;
     }
     .content .title{
-       font-size: 9px;
+       font-size: 14px;
        line-height: 140%;
+
+    }
+    .form{
+        margin: 0.5rem 0 0 0;
     }
     .content .input-box{
         width: 90.49px;

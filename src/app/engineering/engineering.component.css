@@ -29,13 +29,13 @@
     border-radius: 15px;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 340px;
     height : 120px;
     display: flex;
 }
 .image-frame img{
-    width: 231px;
-    height: 70ox;
+    width: 328px;
+    height: 91px;
 }
 
 .partners-container , .images-container{
@@ -47,19 +47,21 @@
         margin: 2rem 1rem;
     }
     .images-container{
-        margin: 0;
+        flex-direction: column;
     }
     .title h1{
         font-size: 25px;
-        margin: 0 0 2rem 0;
+        margin: 0;
+        text-transform: uppercase;
     }
     .image-frame{
-        width: 88px;
-        height: 37px;
+        margin: 1.2rem 0;
+        width: 122px;
+        height: 52px;
         border-radius: 6px;
     }
     .image-frame img{
-        height: 18px;
-        width: 66px;
+        height: 31px;
+        width: 112px;
     }
 }

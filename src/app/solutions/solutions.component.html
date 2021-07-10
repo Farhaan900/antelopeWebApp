@@ -1,12 +1,20 @@
 
 <div class="about-component" id="about" #about>
     <div class="solutions-section"> 
+        <div class="heading mobile">
+            <span class="title">
+                A One Stop Solution
+            </span>
+            <span class="title-sub">
+                Breaking Silos.Smartening Trade.
+            </span>
+        </div>
         <div class="content">
             <div class="text">
-                <span class="title">
+                <span class="title web">
                     A One Stop Solution
                 </span>
-                <span class="title-sub">
+                <span class="title-sub web">
                     Breaking Silos.Smartening Trade.
                 </span>
                 <p class="desc">
@@ -20,7 +28,7 @@
                     trade and logistics sector. 
                 </p>
             </div>
-            <div class="slider icon-cards">
+            <div class="slider icon-cards web">
                 <div class="icon-card card-1">
                     <img src="../../assets/images/SVG/solution-1.svg" alt="">
                     <span class="card-title">
@@ -59,9 +67,60 @@
                     </span>
                 </div>
             </div>
+            <div class="image mobile">
+                <img src="../../assets/images/Sailing Schedule Screen.svg" alt="">
+            </div>
         </div>
-        <div class="image">
+        <div class="image web">
             <img src="../../assets/images/Sailing Schedule Screen.svg" alt="">
         </div>
     </div>
+    <carousel class="slider icon-cards mobile" [height]="150" [arrows]="false"  [cellsToShow]="2">
+        <div class="carousel-cell">
+            <div class="icon-card card-1">
+                <img src="../../assets/images/SVG/solution-1.svg" alt="">
+                <span class="card-title">
+                    Access to Defi
+                    Liquidity Pools
+                </span>
+                <span class="card-text">
+                    For cross-chain and cost-optimized trade financing
+                </span>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="icon-card card-2">
+                <img src="../../assets/images/SVG/solution-2.svg" alt="">
+                <span class="card-title">
+                    Tokenize Invoices into NFT’s
+                </span>
+                <span class="card-text">
+                    For frictionless verification, transfer, and storage
+                </span>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="icon-card card-3">
+                <img src="../../assets/images/SVG/solution-3.svg" alt="">
+                <span class="card-title">
+                    Leverage Decentralized Oracles
+                </span>
+                <span class="card-text">
+                    For off-chain integration with real world processes
+                </span>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="icon-card card-4">
+                <img src="../../assets/images/SVG/solution-4.svg" alt="">
+                <span class="card-title">
+                    Assess credit and Insurance Coverage
+                </span>
+                <span class="card-text">
+                    For effective risk-minimization
+                </span>
+            </div>
+        </div>
+        
+    </carousel>
 </div>
