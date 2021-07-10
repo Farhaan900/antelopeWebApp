@@ -46,6 +46,9 @@
     .engineering-component-container{
         margin: 2rem 1rem;
     }
+    .images-container{
+        margin: 0;
+    }
     .title h1{
         font-size: 25px;
         margin: 0 0 2rem 0;

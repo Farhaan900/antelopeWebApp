@@ -84,7 +84,7 @@
 
 @media screen and (max-width : 480px) {
     .community-component-container{
-        height: 200px;
+        height: fit-content;
         background-size: 100% 100%;
     }
     .news-letter-container{
@@ -96,7 +96,7 @@
         padding: 0 0 0 3rem;
     }
     .bell{
-        margin: -4rem 0 0 -3.5rem;
+        margin: 0;
     }
     .bell img{
         width: 22.92px;
@@ -105,9 +105,9 @@
     .content{
         padding: 0;
     }
-    .content .mail-icon{
-        width: 23px;
-        height: 23px;
+    .mail img{
+        width: 1rem;
+        height: 1rem;
         margin: 0 0.5rem 0 1rem;
     }
     .content .title{

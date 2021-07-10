@@ -24,6 +24,9 @@ import { SolutionsComponent } from './solutions/solutions.component';
 import { LegacyComponent } from './legacy/legacy.component';
 import { WaveComponent } from './wave/wave.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { DividerComponent } from './divider/divider.component';
+import { SolutionOneComponent } from './solution-one/solution-one.component';
+import { SolutionTwoComponent } from './solution-two/solution-two.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     SolutionsComponent,
     LegacyComponent,
     WaveComponent,
+    DividerComponent,
+    SolutionOneComponent,
+    SolutionTwoComponent,
 
   ],
   imports: [

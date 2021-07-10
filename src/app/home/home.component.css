@@ -2,7 +2,7 @@
     display: flex;
     height: calc(100vh - 120px);
     margin: auto;
-    max-width: 1240px;
+    max-width: 85%;
 }
 .home-container .center {
     width: 100%;
@@ -47,7 +47,7 @@
     font-family: var(--primary-font);
     background: var(--background-color);
     color: var(--primary-color);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-neo);
     border-radius: 20px;
     padding: .25rem 7rem;
     font-style: normal;
@@ -104,7 +104,7 @@
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-body);
+    font-size: 16px;
     line-height: 24px;
     /* or 150% */
 
@@ -114,7 +114,7 @@
     /* ◇ Light / Dark */
 
     color: var(--secondary-color);
-    padding: 0 4rem;
+    padding: 0 0rem;
     opacity: 0.8;
 }
 
@@ -122,6 +122,7 @@
     .home-container{
         height: 60vh;
         padding: 0 3rem;
+        max-width: 450px;
     }
     .home-container .waitlist{
         flex-direction: column;

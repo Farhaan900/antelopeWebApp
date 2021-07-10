@@ -8,7 +8,6 @@
 }
 .section{
     display: flex;
-    /* height: 100vh; */
     justify-content: space-between;
     align-items: center;
 }
@@ -101,7 +100,7 @@
 
 @media screen and (max-width : 450px) {
     .about-container{
-        margin: 17rem 2rem 4rem 2rem;
+        margin: 10rem 2rem 2rem 2rem;
     }
     .section .image{
         width: 20%;

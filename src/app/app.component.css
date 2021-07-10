@@ -24,7 +24,8 @@
   --primary-color : #F47A1B;
   --secondary-color :#3E4751;
   --background-color :#FBFAF9;
-  --box-shadow : -5px -5px 20px 3px rgba(255, 255, 255, 0.8), 7px 6px 20px rgba(62, 71, 81, 0.13), inset 6px 7px 22px rgba(0, 0, 0, 0.03);
+  --box-shadow : -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(62, 71, 81, 0.3);
+  --box-shadow-neo : -5px -5px 20px 3px rgba(255, 255, 255, 0.8), 7px 6px 20px rgba(62, 71, 81, 0.13), inset 6px 7px 22px rgba(0, 0, 0, 0.03);
   --font-x-large : 60px;
   --font-large :  40px;
   --font-medium : 34px;
