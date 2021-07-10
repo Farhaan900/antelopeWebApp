@@ -9,9 +9,9 @@
     background-position: 55% top;
 }
 .originators{
-    margin-left: 8rem;
+    margin-left: 14rem;
     max-width: 1240px;
-    width: 50%;
+    width: 32.75%;
     display: flex;
     background: var(--background-color);
     box-shadow: var(--box-shadow);
@@ -20,21 +20,21 @@
     /* margin-bottom: 8rem; */
 }
 .originators .content{
-    width: 78%;
+    width: 85%;
 }
 .originators .image{
-    width: 22%;
-    margin-top: -7rem;
+    width: 15%;
+    margin: -5rem 0 0 0;
 }
 .originators .image img{
-    width: 16rem;
-    height: 12rem;
+    width: 12rem;
+    height: 9.8rem;
 }
 .originators .content .title{
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-large);
+    font-size: 32px;
     line-height: 145%;
     /* or 58px */
 
@@ -47,7 +47,7 @@
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-x-small);
+    font-size: 11.38px;
     line-height: 167%;
     /* or 23px */
 
@@ -57,18 +57,15 @@
 
     opacity: 0.8;
 }
-.btc-image{
-    margin-top: -8rem;
-    display: flex;
-    justify-content: flex-end;
-}
+
+
 .middle-section{
-    margin: -5rem 0 6rem 0;
+    margin: 4rem 10rem 4rem 0;
     display: flex;
     justify-content: space-between;
 }
 .section-heading{
-    width: 60%;
+    width: 52%;
     display: flex;
     justify-content: flex-end;
     background: var(--background-color);
@@ -80,32 +77,47 @@
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-x-large);
+    font-size: 48.7px;
     line-height: 73px;
     text-align: right;
 
     color: var(--secondary-color);
 }
+.section-heading .image{
+    width: 30%;
+}
 .section-heading img{
+    margin: -6rem 0 0 0;
+    position: absolute;
     padding-left: 4rem;
-    width: 10.5rem;
-    height: 11rem;
+    width: 12.2rem;
+    height: 20.5rem;
 }
 
 .liquidity-providors{
-    width: 30%;
-    margin-right: 2rem;
+    width: 37%;
     background: var(--background-color);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
     padding: 2rem 1rem 1.5rem 2rem;
+    display: flex;
 }
-
+.liquidity-providors .content{
+    width: 90%;
+}
+.liquidity-providors .image{
+    margin: -8rem 0 0 20rem;
+    position: absolute;
+}
+.liquidity-providors .image img{
+    width: 11.3rem;
+    height: 8rem;
+}
 .liquidity-providors .content .title{
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-large);
+    font-size: 32.52px;
     line-height: 145%;
     /* or 58px */
 
@@ -118,7 +130,7 @@
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-x-small);
+    font-size: 11.38px;
     line-height: 167%;
     /* or 23px */
 
@@ -131,19 +143,22 @@
 
 .service-institutions{
     max-width: 1240px;
-    margin: 0 0 0 8rem;
-    width: 50%;
+    margin: 0 0 0 14rem;
+    width: 32.75%;
+    display: flex;
     background: var(--background-color);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
     padding: 2.5rem 0 1rem 2rem 
 }
-
+.service-institutions .content{
+    width: 85%;
+}
 .service-institutions .content .title{
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-large);
+    font-size: 32px;
     line-height: 145%;
     /* identical to box height, or 58px */
 
@@ -151,13 +166,19 @@
 
     color: var(--primary-color);
 }
-
+.service-institutions .image img{
+    width: 8.6rem;
+    height: 6.4rem;
+}
+.service-institutions .image{
+    width: 15%;
+    margin: -5rem 0 0 -2rem;
+}
 .service-institutions .content p{
-    width: 82%;
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-x-small);
+    font-size: 11.38px;
     line-height: 167%;
     /* or 23px */
 
