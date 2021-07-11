@@ -2,6 +2,9 @@
     font-family: Lucida-Grande;
     src: url('../../assets/fonts/LucidaGrande.ttf');
 }
+.mobile{
+    display: none;
+}
 .ecosystem{
     margin: 8rem 0 8rem 0;
     padding: 0 0 3rem 0;
@@ -193,108 +196,124 @@
 @media screen and (max-width : 450px) {
     .ecosystem{
         margin: 3rem 0 4rem 0;
-        background-size: 80%;
-        background-position : center;
+        background:none;
+    }
+    .mobile{
+        display: block;
+    }
+    .web{
+        display: none;
+    }
+    .mobile.heading{
+        font-weight: normal;
+        font-family: var(--primary-font);
+        font-size: 26.2917px;
+        line-height: 27px;
+        text-align: center;
+
+        color: #3E4751;
+        margin-bottom: 2rem;
     }
     .originators{
         margin-left: 3rem;
         max-width: 1240px;
-        width: 50%;
+        width: 75%;
         display: flex;
         background: #FBFAF9;
         box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
         border-radius: 1rem;
         padding: 1rem 0 1rem 1rem;
-        /* margin-bottom: 8rem; */
+        margin-left: 1rem;
     }
     .originators .image{
-        width: 22%;
-        margin-top: -2rem;
+        width: 10%;
+        margin: -15% 0 0 -15%;
     }
     .originators .image img{
-        width: 3rem;
-        height: 3.5rem;
+        width: 80px;
+        height: 63px;
+    }
+    .originators .content{
+        width: 90%;
     }
     .originators .content .title{
-        font-size: 11px;  
+        font-size: 16px;  
+        font-family: var(--secondary-font);
     }
     .originators .content p{
         margin-top : 0.5rem;
-        font-size: 5.5px;
+        font-size: 7.76px;
         line-height: 167%;
     }
-    .btc-image{
-        margin-top: 0rem;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .btc-image img{
-       width: 3.8rem;
-       height: 3.2rem;
-    }
-    .middle-section{
-        margin: -1rem 0 3rem 0;
-    }
-    .section-heading{
-        width: 60%;
-        display: flex;
-        justify-content: flex-end;
-        background: #FBFAF9;
-        box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
-        border-radius: 0 88px 88px 0;
-        padding: 1rem 1rem 1rem 0;
-    }
-    .section-heading .section-title{
-        font-family: Verdana;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 30px;
-        text-align: right;
-    
-        color: #3E4751;
-    }
-    .section-heading img{
-        padding-left: 0;
-        width: 3.6rem;
-        height: 3.6rem;
-    }
+
     
     .liquidity-providors{
-        width: 50%;
+        width: 70%;
+        flex-direction: row-reverse;
         margin-right: 1rem;
         background: #FBFAF9;
         box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
         border-radius: 15px;
-        padding: 0.5rem 1rem 0 1rem;
-        margin-left: -0.5rem;
+        padding: 1rem 1rem 1rem 1rem;
+        margin-left: 0rem;
     }
-    
+    .liquidity-providors .image{
+        width: 10%;
+        position: absolute;
+        margin: -10% 67.5% 0 0;
+    }
+    .liquidity-providors .content{
+        width: 90%;
+    }
+    .middle-section{
+        margin-right: 0;
+    }
+    .liquidity-providors .image img{
+        width: 70.87px;
+        height: 51px;
+    }
     .liquidity-providors .content .title{
-        font-size: 10px;
+        font-size: 16px;
+        font-family: var(--primary-font);
         line-height: 145%;
+        text-align: end;
+        width: 100%;
     }
-    
+    .middle-section{
+        justify-content: center;
+        margin: 3rem 0;
+    }
     .liquidity-providors .content p{
-        font-size: 5.5px;
+        font-size: 8.2px;
         line-height: 167%;
+        text-align: right;
     }
     
     .service-institutions{
-        max-width: 1240px;
-        margin: 0 0 0 8rem;
-        width: 50%;
+        margin: auto;
+        width: 75%;
         background: #FBFAF9;
         box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
         border-radius: 15px;
-        padding: 0.5rem 0 0 1rem 
+        padding: 1rem 0 1rem 1rem;
+        margin-left: 1rem;
     }
-    
+    .service-institutions .image{
+        margin: -12% 0 0 -10%;
+        width: 5%;
+    }
+    .service-institutions .content{
+        width: 95%;
+    }
+    .service-institutions .image img{
+        width: 58.85px;
+        height: 43.89px;
+    }
     .service-institutions .content .title{
-        font-family: Verdana;
+        font-family: var(--secondary-font);
         font-style: normal;
         font-weight: normal;
-        font-size: 11px;
+        font-size: 16.08px;
         line-height: 145%;
         /* identical to box height, or 58px */
     
@@ -304,19 +323,18 @@
     }
     
     .service-institutions .content p{
-        width: 82%;
+        width: 100%;
         font-family: Lucida-Grande;
         font-style: normal;
         font-weight: normal;
-        font-size: 5.5px;
+        font-size: 8.02px;
         line-height: 167%;
         /* or 23px */
     
         letter-spacing: 0.015em;
     
         color: #3E4751;
-    
         opacity: 0.8;
-        padding: 0 0 1rem 0;
+        padding: 0;
     }
 }

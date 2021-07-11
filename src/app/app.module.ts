@@ -9,13 +9,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import {MatTabsModule} from '@angular/material/tabs';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { AboutComponent } from './about/about.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TransactionsTestComponent } from './transactions-test/transactions-test.component';
 import { EngineeringComponent } from './engineering/engineering.component';
 
-import { TeamComponent } from './team/team.component';
 import { CommunityComponent } from './community/community.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
@@ -27,6 +25,15 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { DividerComponent } from './divider/divider.component';
 import { SolutionOneComponent } from './solution-one/solution-one.component';
 import { SolutionTwoComponent } from './solution-two/solution-two.component';
+import { AboutComponent } from './about/about.component';
+import { TeamComponent } from './team/team.component';
+import { TokenComponent } from './token/token.component';
+import { TokenAssetComponent } from './token-asset/token-asset.component';
+import { TokenEconomicsComponent } from './token-economics/token-economics.component';
+import { TokenGovernanceComponent } from './token-governance/token-governance.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { TokenPageComponent } from './token-page/token-page.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +41,8 @@ import { SolutionTwoComponent } from './solution-two/solution-two.component';
     HomeComponent,
     HeaderComponent,
     NavbarComponent,
-    AboutComponent,
     TransactionsTestComponent,
     EngineeringComponent,
-    TeamComponent,
     CommunityComponent,
     FooterComponent,
     SocialLinksComponent,
@@ -48,6 +53,15 @@ import { SolutionTwoComponent } from './solution-two/solution-two.component';
     DividerComponent,
     SolutionOneComponent,
     SolutionTwoComponent,
+    AboutComponent,
+    TeamComponent,
+    TokenComponent,
+    TokenAssetComponent,
+    TokenEconomicsComponent,
+    TokenGovernanceComponent,
+    LandingPageComponent,
+    AboutPageComponent,
+    TokenPageComponent,
 
   ],
   imports: [
@@ -59,8 +73,10 @@ import { SolutionTwoComponent } from './solution-two/solution-two.component';
     IvyCarouselModule,
     MatTabsModule,
     RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: 'about', component: AboutComponent},
+      {path: '', component: LandingPageComponent},
+      {path : 'about', component : AboutPageComponent},
+      {path : 'token', component : TokenPageComponent},
+      {path : '**' , component : LandingPageComponent}
     ]),
   ],
   providers: [],

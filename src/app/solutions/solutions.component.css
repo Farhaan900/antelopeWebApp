@@ -67,27 +67,30 @@
     letter-spacing: 0.015em;
     color: var(--secondary-color);
     opacity: 0.8;
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 2.5rem 0;
 }
 .slider.web{
     display: flex;
     justify-content: space-between;
+    overflow: visible;
 }
 
 .icon-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     /* justify-content: space-between; */
-    width: 20%;
+    width: 72.5%;
+    height: 65%;
     background: var(--background-color);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
-    padding : 0.8rem
+    padding : 0.8rem;
+    margin: 1.5rem 0 2.5rem 0;
 }
 
 .icon-card img{
-    height: 3rem;
+    height: auto;
     width: 8rem;
     padding: 0 0 0.8rem 0;
 }
@@ -96,7 +99,7 @@
     font-family:var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-x-small);
+    font-size: 13px;
     line-height: 145%;
     /* or 20px */
 
@@ -104,7 +107,7 @@
     letter-spacing: 0.015em;
 
     color : var(--secondary-color);
-    padding: 0 0 0.4rem 0;
+    /* padding: 0 0 0.4rem 0; */
     opacity: 0.2rem 1rem;
     /* padding: 0.3rem; */
 }
@@ -116,11 +119,11 @@
     font-size: var(--font-xx-small);
     line-height: 130%;
     /* or 13px */
-
+    
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--secondary-color);
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
     opacity: 0.4;
 
 }

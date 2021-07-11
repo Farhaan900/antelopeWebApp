@@ -3619,6 +3619,12 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 html{
     background: #FBFBFD;
 }
+body{
+    -youbkit-touch-callout: none; /* iOS Safari */
+    -youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */    /* Firefox */        /* IE 10+ and Edge */
+    -webkit-user-select: none;
+            user-select: none;
+}
 ::-webkit-scrollbar{
     display: none;
 }

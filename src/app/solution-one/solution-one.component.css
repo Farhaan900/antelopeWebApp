@@ -2,6 +2,9 @@
     font-family: Lucida-Grande;
     src: url('../../assets/fonts/LucidaGrande.ttf');
 }
+.mobile{
+    display: none;
+}
 .about-container{
     margin: auto;
     max-width: 1240px;
@@ -10,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10rem;
 }
 .section .image{
     width: 40%;
@@ -66,101 +70,85 @@
 
     padding-bottom: 0.5rem;
 }
-.section-1{
-    margin-bottom: 10rem;
-}
-.section-1 .image img{
+
+.section .image img{
     height: 24rem;
     width: 28rem;
 }
-.section-2{
-    align-items: center;
-    margin-bottom: 16rem;
-}
+
 .section .image{
     width: fit-content;
 }
 .section .description{
     width: 60%;
 }
-.section-2 .image img{
-    height: 23.5rem;
-    width: 24.8rem;
-}
-.section-2 .description .title{
-    text-align: left;
-}
-.section-2 .description .title-sub{
-    text-align: left;
-}
-.section-2 .description p{
-    width: 100%;
-    text-align: left;
-}
+
 
 @media screen and (max-width : 450px) {
+    .web{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
     .about-container{
-        margin: 10rem 2rem 2rem 2rem;
+        margin: 5rem 2rem 2rem 2rem;
+    }
+    .section{
+        flex-direction: column;
     }
     .section .image{
-        width: 20%;
+        width: fit-content;
+        margin-bottom: 1rem;
     }
     .section .description{
-        width: 75%;
+        width: fit-content;
     }
-    .section-1{
+    .section{
         margin: 0 0 2rem 0;
     }
-    .section-2{
-        position: relative;
+    .section .image img{
+        height: 133px;
+        width:  198px;
     }
-    .section-2 p{
-        text-align: left;
-    }
-    .section-1 .image img{
-        height: 8rem;
-        width:  8rem;
-    }
-    .section-2 .image img{
-        height: 6rem;
-        width:  6rem;
-    }
-    .section .description .title{
+    
+    .section  .title{
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
+        font-family: var(--primary-font);
+        font-size: 22px;
         line-height: 30px;
         /* identical to box height */
-        padding: 0 0 0 3rem;
-        text-align: right;
+        padding: 0;
         color: var(--secondary-color);
-    
-        padding-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 0.5rem;
     }
-    .section .description .title-sub{
+    .section  .title-sub{
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 145%;
         /* or 49px */
-        
-        text-align: right;
         letter-spacing: 0.015em;
         
         color: #F47A1B;  
         
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     .section .description p{
         align-self: flex-end;
         font-family: Lucida-Grande;
-        text-align: left;
+        text-align: center;
         font-style: normal;
         font-weight: normal;
-        font-size: 8px;
+        font-size: 10px;
         line-height: 145%;
         /* or 26px */
-    
+        width: 80%;
+        margin: auto;
+        text-align: center;
         letter-spacing: 0.015em;
     
         color: #3E4751;
@@ -169,25 +157,4 @@
     
         padding-bottom: 0.5rem;
     }
-    .section-1 .description p{
-        text-align: right;
-    }
-    .section-2 .description .title{
-        text-align: left;
-        padding: 0;
-    }
-    .section-2 .description .title-sub{
-        text-align: left;
-        padding: 0;
-    }
-    .section-2 .description p{
-        text-align: left;
-    }
-    .section-2 .description{
-        width: 70%;
-    }
-    .section-2 .image{
-       width: 40%;
-    }
-   
 }

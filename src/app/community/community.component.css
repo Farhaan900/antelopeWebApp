@@ -86,7 +86,7 @@
 @media screen and (max-width : 480px) {
     .community-component-container{
         background: url('../../assets/images/SVG/Mobile-news-letter.svg') no-repeat;
-        background-size: contain;
+        background-size: 100%;
         background-position: center;
         height: 380px;
         width: 100%;
@@ -116,17 +116,18 @@
     }
     .form{
         margin: 0.5rem 0 0 0;
+        display: flex;
+        flex-direction: column;
     }
     .content .input-box{
-        width: 90.49px;
-        height: 16.89px;
+        width: 175px;
+        height: 22px;
         font-size: 6.0324px;
         line-height: 7px;
-        border: 1px solid #F88340;
-        box-sizing: border-box;
-        filter: drop-shadow(-12.0648px -12.0648px 24.1296px rgba(255, 255, 255, 0.13)), drop-shadow(12.0648px 12.0648px 24.1296px rgba(62, 71, 81, 0.26));
-        border-radius: 2.41296px;
-        margin-right: 1rem;
+        background: #FBFAF9;
+        box-shadow: -5.61702px -5.61702px 11.234px rgba(255, 255, 255, 0.13), 5.61702px 5.61702px 11.234px rgba(62, 71, 81, 0.26);
+        border-radius: 12.8049px;
+        margin-bottom: 1rem;
     }
     
     .content .input-box::placeholder{
@@ -139,7 +140,8 @@
         font-size: 6.0324px;
         line-height: 7px;
         /* identical to box height */
-
+        width: 100px;
+        height: 21px;
         text-align: center;
     }
 }

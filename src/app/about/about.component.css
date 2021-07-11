@@ -1,194 +1,49 @@
-@font-face {
-    font-family: Lucida-Grande;
-    src: url('../../assets/fonts/LucidaGrande.ttf');
-}
 .about-container{
-    margin: auto;
     max-width: 1240px;
-}
-.section{
+    height: 100vh;
+    margin: auto;
     display: flex;
-    /* height: 100vh; */
-    justify-content: space-between;
     align-items: center;
-}
-.section .image{
-    width: 40%;
-}
-.section .description{
-    width: 55%;
-    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
-.section .description .title{
+
+.title span{
     font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: normal;
-    font-size: var(--font-x-large);
-    line-height: 73px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
     /* identical to box height */
 
-    text-align: right;
-    color: var(--secondary-color);
+    text-align: center;
 
-    padding-bottom: 1rem;
+    color: #3E4751;
 }
-.section .description .title-sub{
-    font-family: var(--primary-font);
+
+.title-sub span{
+    font-family: var(--secondary-font);
     font-style: normal;
-    font-weight: normal;
-    font-size: var(--font-medium);
-    line-height: 145%;
-    /* or 49px */
-    
-    text-align: right;
-    letter-spacing: 0.015em;
-    
-    color: var(--primary-color);  
-    
-    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FE815F;
+    padding: 16 0 0 0;
 }
-.section .description p{
-    align-self: flex-end;
-    width: 80%;
+.desc{
+    padding: 64px 0 0 0;
+}
+.desc p{
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-body);
-    line-height: 145%;
-    /* or 26px */
-
-    text-align: right;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: justify;
     letter-spacing: 0.015em;
 
-    color: var(--secondary-color);
-
-    opacity: 0.8;
-
-    padding-bottom: 0.5rem;
-}
-.section-1{
-    margin-bottom: 10rem;
-}
-.section-1 .image img{
-    height: 24rem;
-    width: 28rem;
-}
-.section-2{
-    align-items: center;
-    margin-bottom: 16rem;
-}
-.section .image{
-    width: fit-content;
-}
-.section .description{
-    width: 60%;
-}
-.section-2 .image img{
-    height: 23.5rem;
-    width: 24.8rem;
-}
-.section-2 .description .title{
-    text-align: left;
-}
-.section-2 .description .title-sub{
-    text-align: left;
-}
-.section-2 .description p{
-    width: 100%;
-    text-align: left;
-}
-
-@media screen and (max-width : 450px) {
-    .about-container{
-        margin: 17rem 2rem 4rem 2rem;
-    }
-    .section .image{
-        width: 20%;
-    }
-    .section .description{
-        width: 75%;
-    }
-    .section-1{
-        margin: 0 0 2rem 0;
-    }
-    .section-2{
-        position: relative;
-    }
-    .section-2 p{
-        text-align: left;
-    }
-    .section-1 .image img{
-        height: 8rem;
-        width:  8rem;
-    }
-    .section-2 .image img{
-        height: 6rem;
-        width:  6rem;
-    }
-    .section .description .title{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 30px;
-        /* identical to box height */
-        padding: 0 0 0 3rem;
-        text-align: right;
-        color: var(--secondary-color);
-    
-        padding-bottom: 1rem;
-    }
-    .section .description .title-sub{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 145%;
-        /* or 49px */
-        
-        text-align: right;
-        letter-spacing: 0.015em;
-        
-        color: #F47A1B;  
-        
-        padding-bottom: 1rem;
-    }
-    .section .description p{
-        align-self: flex-end;
-        font-family: Lucida-Grande;
-        text-align: left;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 8px;
-        line-height: 145%;
-        /* or 26px */
-    
-        letter-spacing: 0.015em;
-    
-        color: #3E4751;
-    
-        opacity: 0.8;
-    
-        padding-bottom: 0.5rem;
-    }
-    .section-1 .description p{
-        text-align: right;
-    }
-    .section-2 .description .title{
-        text-align: left;
-        padding: 0;
-    }
-    .section-2 .description .title-sub{
-        text-align: left;
-        padding: 0;
-    }
-    .section-2 .description p{
-        text-align: left;
-    }
-    .section-2 .description{
-        width: 70%;
-    }
-    .section-2 .image{
-       width: 40%;
-    }
-   
+    color: #3E4751;
 }
