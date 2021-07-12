@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Globals } from '../globals';
 @Component({
   selector: 'app-community',
   templateUrl: './community.component.html',
-  styleUrls: ['./community.component.css']
+  styleUrls: ['./community.component.css'],
+  providers : [Globals]
 })
 export class CommunityComponent implements OnInit {
 
-  constructor() { }
+  g : Globals;
+  constructor(public globals: Globals){
+    this.g = globals;
+  }
 
   ngOnInit(): void {
   }

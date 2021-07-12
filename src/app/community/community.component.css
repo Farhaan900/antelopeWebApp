@@ -1,6 +1,6 @@
 
 .community-component-container{
-    background: url('../../assets/images/newsletter-background.svg') no-repeat;
+    background: url('../../assets/images/SVG/subscribe-background.svg') no-repeat;
     background-position: center;
     /* background-size: cover; */
     height: 640px;
@@ -34,7 +34,7 @@
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-large);
+    font-size: 35px;
     line-height: 49px;
     color: var(--secondary-color);
 }
@@ -95,7 +95,7 @@
         width: 233px;
     }
     .bell{
-        margin: -35% 0 0 -10%;
+        margin: -40% 0 0 -20%;
     }
     .bell img{
         width: 46px;

@@ -3,6 +3,6 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class Globals {
   name: string = 'vamsi';
-  language: string = 'English';
-  theme: string = 'Light'
+  language: string = 'Fr';
+  theme: string = 'light'
 }

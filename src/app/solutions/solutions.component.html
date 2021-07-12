@@ -1,5 +1,4 @@
-
-<div class="about-component" id="about" #about>
+<div class="about-component"  *ngIf="g.language === 'En'">
     <div class="solutions-section"> 
         <div class="heading mobile">
             <span class="title">
@@ -26,6 +25,137 @@
                     by offering an end-to-end solution
                     for the globally expanding decentralized
                     trade and logistics sector. 
+                </p>
+            </div>
+            <carousel class="slider icon-cards web" [width]="830" [arrowsOutside]="true" [height]="230">
+                <div class="carousel-cell">
+                    <div class="icon-card card-1">
+                        <img src="../../assets/images/SVG/solution-1.svg" alt="">
+                        <span class="card-title">
+                            Access to Defi
+                            Liquidity Pools
+                        </span>
+                        <span class="card-text">
+                            For cross-chain and cost-optimized trade financing
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="icon-card card-2">
+                        <img src="../../assets/images/SVG/solution-2.svg" alt="">
+                        <span class="card-title">
+                            Tokenize Invoices into NFT’s
+                        </span>
+                        <span class="card-text">
+                            For frictionless verification, transfer, and storage
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="icon-card card-3">
+                        <img src="../../assets/images/SVG/solution-3.svg" alt="">
+                        <span class="card-title">
+                            Leverage Decentralized Oracles
+                        </span>
+                        <span class="card-text">
+                            For off-chain integration with real world processes
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="icon-card card-4">
+                        <img src="../../assets/images/SVG/solution-4.svg" alt="">
+                        <span class="card-title">
+                            Assess credit and Insurance Coverage
+                        </span>
+                        <span class="card-text">
+                            For effective risk-minimization
+                        </span>
+                    </div>
+                </div>
+            </carousel>
+            <div class="image mobile">
+                <img src="../../assets/images/Sailing Schedule Screen.svg" alt="">
+            </div>
+        </div>
+        <div class="image web">
+            <img src="../../assets/images/Sailing Schedule Screen.svg" alt="">
+        </div>
+    </div>
+    <carousel class="slider icon-cards mobile" [height]="185" [arrows]="false"  [cellsToShow]="2">
+        <div class="carousel-cell">
+            <div class="icon-card card-1">
+                <img src="../../assets/images/SVG/solution-1.svg" alt="">
+                <span class="card-title">
+                    Access to Defi
+                    Liquidity Pools
+                </span>
+                <span class="card-text">
+                    For cross-chain and cost-optimized trade financing
+                </span>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="icon-card card-2">
+                <img src="../../assets/images/SVG/solution-2.svg" alt="">
+                <span class="card-title">
+                    Tokenize Invoices into NFT’s
+                </span>
+                <span class="card-text">
+                    For frictionless verification, transfer, and storage
+                </span>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="icon-card card-3">
+                <img src="../../assets/images/SVG/solution-3.svg" alt="">
+                <span class="card-title">
+                    Leverage Decentralized Oracles
+                </span>
+                <span class="card-text">
+                    For off-chain integration with real world processes
+                </span>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="icon-card card-4">
+                <img src="../../assets/images/SVG/solution-4.svg" alt="">
+                <span class="card-title">
+                    Assess credit and Insurance Coverage
+                </span>
+                <span class="card-text">
+                    For effective risk-minimization
+                </span>
+            </div>
+        </div>
+        
+    </carousel>
+</div>
+
+<!-- french content -->
+
+<div class="about-component" *ngIf="g.language === 'Fr'">
+    <div class="solutions-section"> 
+        <div class="heading mobile">
+            <span class="title">
+                Une solution One Stop
+            </span>
+            <span class="title-sub">
+                Breaking Silos.Smartening Trade.
+            </span>
+        </div>
+        <div class="content">
+            <div class="text">
+                <span class="title web">
+                    Une solution One Stop
+                </span>
+                <span class="title-sub web">
+                    Breaking Silos.Smartening Trade.
+                </span>
+                <p class="desc">
+                    <strong>Antelope</strong> est un écosystème complet, intégré et inter-chaînes, conçu pour résoudre les problèmes de fragmentation et de facilité d'utilisation.
+                    La plateforme connecte les parties prenantes, réduit les barrières et améliore l'accès en offrant une solution de bout en bout pour le secteur du commerce et de la logistique décentralisé.
+
                 </p>
             </div>
             <carousel class="slider icon-cards web" [width]="830" [arrowsOutside]="true" [height]="230">

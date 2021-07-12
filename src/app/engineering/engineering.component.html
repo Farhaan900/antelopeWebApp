@@ -1,4 +1,4 @@
-<div class="engineering-component-container" id="engineering">
+<div class="engineering-component-container" *ngIf="g.language === 'En'">
     
     <div class="partners-container">
         <div class="title">
@@ -31,3 +31,43 @@
         </div>
     </div>
 </div>
+<!-- French -->
+<div class="engineering-component-container" *ngIf="g.language === 'Fr'">
+    
+    <div class="partners-container">
+        <div class="title">
+            <h1>
+                <div class="engineering-component-container" id="engineering">
+    
+    <div class="partners-container">
+        <div class="title">
+            <h1>    
+                Nos partenaires
+            </h1>
+        </div>
+        <div class="images-container" animateOnScroll animationName="animated fadeInLeftBig">
+            <a href="https://cargox.io" target="_blank">
+                <div class="image-frame">
+                    <!--   animated-delay-3" animateOnScroll animationName="animated fadeInLeft"> -->
+                    <img src="../../assets/images/SVG/partners-1.png" />
+                </div>
+            </a>
+            <a href="https://arvaloo.com" target="_blank">
+                <div class="image-frame">
+                    <!--   animated-delay-2" animateOnScroll animationName="animated fadeInLeft"> -->
+                    <img src="../../assets/images/SVG/partners-2.png" />
+                </div>
+            </a>
+            <a href="https://visesaenergy.com" target="_blank">
+                <div class="image-frame">
+                    <!--   animated-delay-1" animateOnScroll animationName="animated fadeInLeft"> -->
+                    <img src="../../assets/images/SVG/partners-3.png" />
+                </div>
+            </a>
+            <!-- <div class="image-frame">
+                <img src="assets/images/seaport_logo.png" />
+            </div> -->
+        </div>
+    </div>
+</div>
+           

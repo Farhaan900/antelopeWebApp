@@ -1,7 +1,7 @@
-<div class="about-container">
+<div class="about-container" *ngIf="g.language === 'En'">
     <div class="section-1 section">
         <span class="title mobile">
-            Public & Global
+           Public & Global
         </span>
         <span class="title-sub mobile">
             Lowering Barriers. Widening Access.
@@ -29,6 +29,36 @@
                 innovation, our inclusive and community-oriented 
                 business model is conducive to sustainable growth 
                 and enhanced ROIs.                
+            </p>
+        </div>
+    </div>
+</div>
+<!-- French -->
+
+<div class="about-container" *ngIf="g.language === 'Fr'">
+    <div class="section-1 section">
+        <span class="title mobile">
+           Publique et globale
+        </span>
+        <span class="title-sub mobile">
+            Moins de barrières. Plus d'accès.
+        </span>
+        <div class="image">
+            <img src="../../assets/images/SVG/public&global.svg" alt="">
+        </div>
+        <div class="description">
+            <span class="title web">
+                Publique et globale
+            </span>
+            <span class="title-sub web">
+                Moins de barrières. Plus d'accès.
+            </span>
+            <p class="para-1">
+                Conçu sur des dispositifs blockchain publics et accessibles dans le monde entier, comme Ethereum et Centrifuge. Antelope réduit les barrières d'entrée pour les PME et les investisseurs alternatifs, contrairement à ses pairs qui fonctionnent sur des réseaux exclusifs, privés et soumis à autorisation.
+
+            </p>
+            <p class="para-2">
+                En plus de favoriser la collaboration et l'innovation, notre business model inclusif et orienté vers la communauté est  propice à une croissance durable et à un meilleur retour sur investissement.             
             </p>
         </div>
     </div>

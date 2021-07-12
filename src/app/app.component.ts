@@ -1,22 +1,22 @@
 import { Component , OnInit } from '@angular/core';
-// import * as skrollr from 'skrollr';
-
+import { Globals } from './globals';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers : [Globals]
 })
 export class AppComponent {
   title = 'antelope-dao-app';
-  public ngOnInit(): void {
-      // var s = skrollr.init();
-      // if(s.isMobile()){
-      //   s.destroy();
-      // }
+  g: Globals;
+  state : any  = "hide";
 
+  constructor(public globals: Globals){
+      this.g = globals;
   }
-  // public ngAfterViewInit() : void{
-  //     skrollr.init().refresh();
-  // }
+  public ngOnInit(): void {
+    
+  }
+  
 }
 

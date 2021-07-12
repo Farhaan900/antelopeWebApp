@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Globals } from '../globals';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  providers : [Globals]
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  g : Globals;
+  constructor(public globals: Globals){
+    this.g = globals;
+  }
 
   ngOnInit(): void {
   }

@@ -13,8 +13,6 @@ export class LegacyComponent implements OnInit {
   constructor(public globals: Globals){
       this.g = globals;
   }
-  
-
   ngOnInit(): void {
     console.log(this.g.name)
   }

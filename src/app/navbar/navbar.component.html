@@ -1,14 +1,22 @@
 <div class="topnav" id="myTopnav">
-    <div class="menu-items" [class.hide]="state === 'hide'">
-        <a routerLink="/" routerLinkActive="active" class="active">Home</a>
+    <div class="menu-items" [class.hide]="state === 'hide'" *ngIf="g.language === 'En'">
+        <a routerLink="/" routerLinkActive="active">Home</a>
         <a routerLink="/about" routerLinkActive="active">About Us</a>
         <a routerLink="/token" routerLinkActive="active">Token</a>
     </div>
+    <div class="menu-items" [class.hide]="state === 'hide'" *ngIf="g.language === 'Fr'">
+        <a routerLink="/" routerLinkActive="active">Accueil</a>
+        <a routerLink="/about" routerLinkActive="active">À propos de nous</a>
+        <a routerLink="/token" routerLinkActive="active">Token</a>
+    </div>
     <div class="menu-icons">
-        <a href="javascript:void(0);" class="language" >
-            <img src="assets/images/SVG/language-icon.png">
+        <a href="javascript:void(0);" class="language" (click)='langChange()' >
+            <img src="assets/images/SVG/language-icon.png"> &nbsp; {{g.language}}
         </a>
-        <a href="javascript:void(0);" class="burger" (click)="toggle()">
+        <div class="dark-mode-toggle" (click)='themeChange()'>
+            <img [class.transform]="g.theme == 'dark'" src="{{themeImage}}" alt="">    
+        </div>
+        <a href="javascript:void(0);" class="burger" (click)='toggle()' >
             <img src="assets/images/SVG/burger-icon.svg">
         </a>
     </div>

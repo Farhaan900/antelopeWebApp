@@ -1,4 +1,4 @@
-<div class="legacy-container">
+<div class="legacy-container" *ngIf="g.language === 'En'">
     <div class="title-container">
         <span class="title">
             The Legacy Problems
@@ -128,6 +128,249 @@
                             exclusive regulations, and exorbitant costs. 
                             De-Fi alternatives are challenging for traders 
                             and investors due to the following reasons.
+                        </p>
+                        <div class="icon-cards">
+                            <div class="row-1 row">
+                                <div class="icon-card card-1">
+                                    <img src="../../assets/images/SVG/access-1.svg" alt="">
+                                    <span>
+                                        Information <br> Constraints
+                                    </span>
+                                </div>
+                                <div class="icon-card card-2">
+                                    <img src="../../assets/images/SVG/access-2.svg" alt="">
+                                    <span>
+                                        Steep <br> Learning Curves
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row-2 row">
+                                <div class="icon-card card-3">
+                                    <img src="../../assets/images/SVG/access-3.svg" alt="">
+                                    <span>
+                                        Lack of User-Friendly <br> integrated solutions
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="image-card">
+                    <div class="card-title">
+                        <span>Operations</span>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../assets/images/SVG/operations.svg" alt="">
+                        <p>
+                            Enterprises face severe accountability 
+                            crises while conducting domestic and 
+                            international trades, due to inadequate 
+                            solutions for shipment tracking and 
+                            supply chain monitoring. 
+                        </p>
+                        <div class="icon-cards">
+                            <div class="row-1 row">
+                                <div class="icon-card card-1">
+                                    <img src="../../assets/images/SVG/operations-1.svg" alt="">
+                                    <span>
+                                        Information <br> Constraints
+                                    </span>
+                                </div>
+                                <div class="icon-card card-2">
+                                    <img src="../../assets/images/SVG/operations-2.svg" alt="">
+                                    <span>
+                                        Steep <br> Learning Curves
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row-2 row">
+                                <div class="icon-card card-3">
+                                    <img src="../../assets/images/SVG/operations-3.svg" alt="">
+                                    <span>
+                                        Lack of User-Friendly <br> integrated solutions
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="image-card integrations">
+                    <div class="card-title">
+                        <span>Operations</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row-1 row">
+                            <span class="title">
+                                Fragmented trade and supply chain ecosystem 
+                            </span>
+                            <p>
+                                This compels stakeholders to use 
+                                different solutions for different 
+                                needs and complicates business 
+                                processes leading to low interoperability.
+                            </p>
+                        </div>
+                        <img src="../../assets/images/SVG/integrations.svg" alt="">
+                        <div class="row-2 row">
+                            <span class="title">
+                                Lack of fiat on/off <br> ramps
+                            </span>
+                            <p>
+                                Absence of frictionless integrations 
+                                between conventional and crypto-based 
+                                finance is an additional hindrance 
+                                to cross-border trading.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </carousel>
+    </div>
+</div>
+
+<div class="legacy-container" *ngIf="g.language === 'Fr'">
+    <div class="title-container">
+        <span class="title">
+            Les problèmes qui persistent
+        </span>
+    </div>
+    <div class="web">
+        <div class="tab-container" [class.operations-background]="id === 'operation'" [class.integrations-background]="id === 'integration'">
+            <ul class="tab-selectors">
+                <li [class.active]="id === 'access'" id="access" (click)="tabChange('access')">L’Accès</li>
+                <li [class.active]="id === 'operation'" id="operation" (click)="tabChange('operation')">Operation</li>
+                <li [class.active]="id === 'integration'" id="integration" (click)="tabChange('integration')">Integration</li>
+            </ul>
+            <div class="tab tab-1"  *ngIf="id === 'access'">
+                <div class="content">
+                    <p>
+                        Les institutions financières traditionnelles élèvent des 
+                        barrières à l'entrée pour les pme et limitent leur accès 
+                        aux capitaux commerciaux par des procédures d'entrée 
+                        compliquées, des réglementations exclusives et des 
+                        coûts exorbitants. Les solutions financières 
+                        décentralisées sont un défi pour les commerçants 
+                        et les investisseurs en raison des contraintes 
+                        d'information, des  processus d'apprentissage difficiles et 
+                        du manque de solutions intégrées conviviales
+                    </p>
+                    <div class="icon-content">
+                        <div class="icon-box">
+                            <img src="../../assets/images/SVG/access-1.svg" alt="">
+                            <span>
+                                Information <br> Constraints
+                            </span>
+                        </div>
+                        <div class="icon-box">
+                            <img src="../../assets/images/SVG/access-2.svg" alt="">
+                            <span>
+                                Steep Learning <br> Curves
+                            </span>
+                        </div>
+                        <div class="icon-box">
+                            <img src="../../assets/images/SVG/access-3.svg" alt="">
+                            <span>
+                                Lack of User-Friendly integrated solutions
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../../assets/images/SVG/access.svg" alt="">
+                </div>
+            </div>
+    
+            <div class="tab tab-2" *ngIf="id === 'operation'">
+                <div class="content">
+                    <p>
+                        Enterprises face severe accountability 
+                        crises while conducting domestic and 
+                        international trades, due to inadequate 
+                        solutions for shipment tracking and supply 
+                        chain monitoring. 
+                    </p>
+                    <div class="icon-content">
+                        <div class="icon-box">
+                            <img src="../../assets/images/SVG/operations-1.svg" alt="">
+                            <span>
+                                Manipulation Risks
+                            </span>
+                        </div>
+                        <div class="icon-box">
+                            <img src="../../assets/images/SVG/operations-2.svg" alt="">
+                            <span>
+                                Lack of transparency
+                            </span>
+                        </div>
+                        <div class="icon-box">
+                            <img src="../../assets/images/SVG/operations-3.svg" alt="">
+                            <span>
+                                Quality Compromises
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../../assets/images/SVG/operations.svg" alt="">
+                </div>
+            </div>
+    
+            <div class="tab tab-3" *ngIf="id === 'integration'">
+                <div class="content content-1">
+                    <p class="title-text">
+                        Fragmented trade and supply chain ecosystem 
+                    </p>
+                    <p class="desc-text">
+                        This compels stakeholders to use different 
+                        solutions for different needs and complicates 
+                        business processes leading to low interoperability.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../../assets/images/SVG/integrations.svg" alt="">
+                </div>
+                <div class="content content-2">
+                    <p class="title-text">
+                        Lack of fiat on/off ramps
+                    </p>
+                    <p class="desc-text">
+                        Absence of frictionless integrations 
+                        between conventional and crypto-based 
+                        finance is an additional hindrance to cross-border trading.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="mobile">
+        <carousel class="carousel-container"  [height]="430"  [cellsToShow]="1" [arrowsOutside]="false">
+            <div class="carousel-cell">
+                <div class="image-card">
+                    <div class="card-title">
+                        <span>L’Accès</span>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../assets/images/SVG/access.svg" alt="">
+                        <p>
+                            Les institutions financières traditionnelles 
+                            élèvent des barrières à l'entrée pour les pme 
+                            et limitent leur accès aux capitaux commerciaux 
+                            par des procédures d'entrée compliquées, 
+                            des réglementations exclusives et des coûts 
+                            -exorbitants. Les solutions financières 
+                            décentralisées sont un défi pour les commerçants 
+                            et les investisseurs en raison des contraintes 
+                            d'information, des  processus d'apprentissage difficiles 
+                            et du manque de solutions intégrées conviviales.
+
                         </p>
                         <div class="icon-cards">
                             <div class="row-1 row">

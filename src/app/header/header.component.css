@@ -1,7 +1,13 @@
+.nav-bar-container{
+    position: fixed;
+    width: 100%;
+    background : var(--background-color);
+    z-index: 99999;
+}
 .header {
     /* height: 180px; */
     display: flex;
-    padding: 2rem 0 0 0;
+    padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
     max-width: 90%;

@@ -1,5 +1,5 @@
 <div class="home-container">
-    <div class="center">
+    <div class="center" *ngIf="g.language === 'En'">
         <h1 class="head-1 header-item">A Decentralized Solution for</h1>
         <h1 class="head-2 header-item">End-to-End Supply Chain Management & Trade Finance</h1>
         <span class="description header-item">
@@ -10,8 +10,24 @@
             tokenized risks, and crypto-based derivatives. 
         </span>
         <div class="waitlist">
-            <input type="email" id="email" placeholder="Enter your E-mail" autocomplete="off">
+            <input type="email" id="email" placeholder="this-Enter your E-mail" autocomplete="off">
             <button class="">Join Waitlist</button>
+        </div>
+    </div>
+    <div class="center" *ngIf="this.g.language === 'Fr'">
+        <h1 class="head-1 header-item">Une solution décentralisée pour</h1>
+        <h1 class="head-2 header-item">tout le processus 
+            Supply Chain ainsi que  le Trade Finance.        </h1>
+        <span class="description header-item">
+            Simplifier le processus de l’achat au paiement avec de la trade 
+            finance intégrée, suivi en temps réel des cargaisons,partage 
+            sécurisé des documents, ainsi qu’une transparence entre l’acheteur 
+            et le vendeur. Générer des revenus Defi stables avec des actifs 
+            réels, des risques tokenizé s, produits dérivés sur crypto.
+        </span>
+        <div class="waitlist">
+            <input type="email" id="email" placeholder="saisissez votre adresse e-mail" autocomplete="off">
+            <button class="">Inscrivez-vous sur notre liste d'attente </button>
         </div>
     </div>
 </div>

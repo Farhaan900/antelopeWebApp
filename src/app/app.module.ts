@@ -75,8 +75,7 @@ import { TokenPageComponent } from './token-page/token-page.component';
     RouterModule.forRoot([
       {path: '', component: LandingPageComponent},
       {path : 'about', component : AboutPageComponent},
-      {path : 'token', component : TokenPageComponent},
-      {path : '**' , component : LandingPageComponent}
+      {path : 'token', component : TokenPageComponent}
     ]),
   ],
   providers: [],

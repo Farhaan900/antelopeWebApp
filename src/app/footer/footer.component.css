@@ -2,7 +2,7 @@
     margin: 0;
 }
 .footer-component-wrapper{
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
 }
 .divider{
@@ -27,25 +27,32 @@
 }
 
 .site-logo img{
-    width: 13.5rem;
-    height: 5.6rem;
+    width: 217px;
+    height: 89px;
     margin: 0 0 1rem 0;
 }
-.site-logo span{
+.site-logo p{
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--font-x-small);
-    /* line-height: 180%; */
+    font-size: 16px;
+    line-height: 180%;
+    width: 90%;
     /* or 43px */
 
     letter-spacing: 0.015em;
 
     color: var(--secondary-color);
 }
+.site-map ul{
+    padding: 0;
+}
 .site-map li{
     list-style: none;
     margin-bottom: 1.2rem;
+}
+.site-map a:hover{
+    color: var(--primary-color);
 }
 .site-map a{
     font-family: var(--secondary-font);
@@ -63,7 +70,7 @@
 
     color: var(--secondary-color);
 }
-.title span{
+.title h6{
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: normal;
@@ -74,8 +81,15 @@
     align-items: center;
     text-align: justify;
     letter-spacing: 0.015em;
+    text-decoration: none;   
     margin-bottom: 1rem;
-    color: var(--secondary-color);    
+}
+.title a{
+    color: var(--secondary-color); 
+    text-decoration: none;
+}
+.title a:hover{
+    color: var(--primary-color);
 }
 .icons{
     margin-top: 1rem;
@@ -152,9 +166,13 @@
     .community{
         text-align: center;
     }
-    .title span{
+    .title a{
         font-size: 14px;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0;
+    }
+    .title h6{
+        margin : 0;
+        text-align: center;
     }
     .icons {
         margin-top: 2rem;

@@ -1,4 +1,4 @@
-<div class="about-container">
+<div class="about-container" *ngIf="g.language === 'En'">
     <div class="title">
         <span>
             The Antelope DAO
@@ -25,5 +25,37 @@
             community and envisioning a future with harmonious connectivity, collaboration, 
             and seamless integration between stakeholders of the global Trade & Logistics sector.
         </p>
+    </div>
+</div>
+<!-- French -->
+<div class="about-container" *ngIf="g.language === 'Fr'">
+    <div class="title">
+        <span>
+            The Antelope DAO
+        </span>
+    </div>
+    <div class="title-sub">
+        <span>
+            Une fondation décentralisée
+        </span>
+    </div>
+    <div class="desc">
+        <p>
+            Les Pme contribuent de manière substantielle à la croissance 
+            économique mondiale, mais les systèmes existants leur ouvrent 
+            des voies épineuses en raison d'obstacles et de normes réglementaires 
+            inéquitables. De la même manière , le domaine traditionnel du commerce 
+            et de la logistique n'est pas propice aux investisseurs alternatifs, en 
+            particulier ceux qui s'adonnent aux crypto-monnaies.
+
+        </p>
+        <!-- <p>
+            Antelope DAO embarks on a mission to disrupt this scenario, striving to 
+            establish a decentralized, trustless, and automated ecosystem for traders 
+            and financiers across magnitudes. To this end, the foundation has developed 
+            the Antelope protocol, benefitting a geographically distributed users’ 
+            community and envisioning a future with harmonious connectivity, collaboration, 
+            and seamless integration between stakeholders of the global Trade & Logistics sector.
+        </p> -->
     </div>
 </div>

@@ -1,1 +1,42 @@
-<p>token-economics works!</p>
+<div class="tokenomics-container">
+    <div class="title">
+        <h1>
+            ANTLP Tokenomics
+        </h1>
+    </div>
+    <div class="title-sub">
+        <h1>
+            Sharing Information. Ensuring Transparency.
+        </h1>
+    </div>
+    <div class="pie-chart-container">
+        <div class="pie-dummy">
+
+        </div>
+        <div class="pie-outer">
+            <img src="../../assets/images/SVG/tokenomics.svg" alt="">
+        </div>
+        <div class="chart-content"> 
+            <div class="chart-title-sub">
+                <h1>
+                    Supply Distribution
+                </h1>
+            </div>
+            <div class="chart-title">
+                <h1>
+                    100,000,000 (100 Million) 
+                </h1>
+            </div>
+           
+            <div class="chart-data">
+                <div class="data-item" *ngFor="let stat of stats">
+                    <div class="name">
+                        <div class="indicator" [ngStyle]="{'background': stat.color}"></div>
+                        <span class="stat-name">{{stat.name}}</span>
+                    </div>
+                    <span class="percentage">{{stat.percentage}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

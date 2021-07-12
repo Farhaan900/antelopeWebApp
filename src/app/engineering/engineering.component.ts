@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Globals } from '../globals';
 @Component({
   selector: 'app-engineering',
   templateUrl: './engineering.component.html',
-  styleUrls: ['./engineering.component.css']
+  styleUrls: ['./engineering.component.css'],
+  providers : [Globals]
 })
 export class EngineeringComponent implements OnInit {
-
-  constructor() { }
-
+  g : Globals;
+  constructor(public globals: Globals){
+    this.g = globals;
+  }
   ngOnInit(): void {
   }
 
