@@ -254,8 +254,9 @@
         background: #FBFAF9;
         box-shadow: -8.34734px -8.34734px 16.6947px #FFFFFF, 8.34734px 8.34734px 16.6947px rgba(62, 71, 81, 0.3);
         border-radius: 15px;
-        padding: 1rem 1rem 1rem 1rem;
-        margin-left: 0rem;
+        padding: 1rem  1rem 1rem;
+        margin-left: 2rem;
+        margin-right: 0rem;
     }
     .liquidity-providors .image{
         width: 10%;
