@@ -131,6 +131,9 @@
         max-width: 320px;
         margin-bottom: 0.5rem;
     }
+    .web{
+        display: none;
+    }
     .body{
         flex-direction: column;
         align-items: center;

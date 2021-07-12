@@ -1,11 +1,12 @@
 .tokenomics-container{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     max-width: 1440px;
+    padding: 9rem 0;
 }
 .title h1{
     font-family: var(--primary-font);
@@ -18,7 +19,6 @@
     text-align: center;
 
     color: var(--secondary-color);
-
 }
 
 .title-sub h1{

@@ -141,9 +141,9 @@
         align-items: center;
     }
     .home-container .center h1{
-        font-size: 25px;
-        line-height: 30px;  
-    }
+        font-size: 25px !important;
+        line-height: 30px !important;  
+    }  
     .home-container .center .head-2{
         margin: 0 0 0.5rem 0;
     }
@@ -156,8 +156,7 @@
         margin: 1rem 0 0 0;
     }
     .home-container .waitlist input{
-        width: 100%;
-        padding: 0.3rem 0;
+        padding: 0.3rem 3rem;
         margin: 1rem 0;
         font-size: 0.6rem;
     }
