@@ -25,7 +25,7 @@
 }
 .tab-container{
     margin: auto;
-    background: var(--background-color) url('../../assets/images/SVG/access-background.svg') no-repeat;
+    background: var(--background-color) url('/assets/images/SVG/access-background.svg') no-repeat;
     background-position: top right;
     box-shadow: var(--box-shadow);
     border-radius: 20px;
@@ -34,11 +34,11 @@
     /* transition: 1s ease; */
 }
 .operations-background{
-    background: var(--background-color) url('../../assets/images/SVG/operations-background.svg') no-repeat;
+    background: var(--background-color) url('/assets/images/SVG/operations-background.svg') no-repeat;
     background-position: bottom right;
 }
 .integrations-background{
-    background: var(--background-color) url('../../assets/images/SVG/integrations-background.svg') no-repeat;
+    background: var(--background-color) url('/assets/images/SVG/integrations-background.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }

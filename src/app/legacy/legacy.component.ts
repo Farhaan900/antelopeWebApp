@@ -5,7 +5,6 @@ import { Globals } from '../globals';
   selector: 'app-legacy',
   templateUrl: './legacy.component.html',
   styleUrls: ['./legacy.component.css'],
-  providers : [Globals]
 })
 export class LegacyComponent implements OnInit {
   g: Globals;

@@ -4,7 +4,6 @@ import { Globals } from '../globals';
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
-  providers : [Globals]
 })
 export class AboutComponent implements OnInit {
 
@@ -12,7 +11,7 @@ export class AboutComponent implements OnInit {
   constructor(public globals: Globals){
     this.g = globals;
   }
-
+  
   ngOnInit(): void {
   }
 

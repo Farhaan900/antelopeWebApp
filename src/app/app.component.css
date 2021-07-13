@@ -1,14 +1,14 @@
 @font-face {
     font-family: Verdana;
-    src: url('../assets/fonts/verdana.ttf');
+    src: url('/assets/fonts/verdana.ttf');
 }
 @font-face {
     font-family: Merri;
-    src: url('../assets/fonts/Merriweather-Regular.ttf');
+    src: url('/assets/fonts/Merriweather-Regular.ttf');
 }
 @font-face {
     font-family: Lucida;
-    src: url('../assets/fonts/LucidaGrande.ttf');
+    src: url('/assets/fonts/LucidaGrande.ttf');
 }
 * {
     font-family: 'Roboto', sans-serif;

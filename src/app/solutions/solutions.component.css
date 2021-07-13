@@ -1,12 +1,12 @@
 @font-face {
     font-family: Lucida-Grande;
-    src: url('../../assets/fonts/LucidaGrande.ttf');
+    src: url('/assets/fonts/LucidaGrande.ttf');
 }
 .about-component{
     display: flex;
     align-items: center;
     margin: 8rem 0 4rem 0;
-    background: url('../../assets/images/solutions-background.png') no-repeat;
+    background: url('/assets/images/solutions-background.png') no-repeat;
     background-position: right top; 
 }
 .solutions-section{

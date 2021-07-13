@@ -4,7 +4,6 @@ import { Globals } from '../globals';
   selector: 'app-community',
   templateUrl: './community.component.html',
   styleUrls: ['./community.component.css'],
-  providers : [Globals]
 })
 export class CommunityComponent implements OnInit {
 

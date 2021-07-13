@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Lucida-Grande;
-    src: url('../../assets/fonts/LucidaGrande.ttf');
-}
+
 .mobile{
     display: none;
 }
@@ -9,7 +6,7 @@
     margin: 8rem 0 8rem 0;
     padding: 0 0 3rem 0;
     /* height: 100vh; */
-    background: url('../../assets/images/SVG/ecosystem-background.svg') no-repeat;
+    background: url('/assets/images/SVG/ecosystem-background.svg') no-repeat;
     background-position: 55% top;
 }
 .originators{

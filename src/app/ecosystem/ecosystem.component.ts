@@ -4,7 +4,6 @@ import { Globals } from '../globals';
   selector: 'app-ecosystem',
   templateUrl: './ecosystem.component.html',
   styleUrls: ['./ecosystem.component.css'],
-  providers : [Globals]
 })
 export class EcosystemComponent implements OnInit {
 

@@ -4,7 +4,6 @@ import { Globals } from '../globals';
   selector: 'app-solution-two',
   templateUrl: './solution-two.component.html',
   styleUrls: ['./solution-two.component.css'],
-  providers : [Globals]
 })
 export class SolutionTwoComponent implements OnInit {
 

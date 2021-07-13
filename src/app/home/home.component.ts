@@ -4,8 +4,7 @@ import { Globals } from '../globals';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  providers : [Globals]
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 

@@ -4,7 +4,6 @@ import { Globals } from '../globals';
   selector: 'app-engineering',
   templateUrl: './engineering.component.html',
   styleUrls: ['./engineering.component.css'],
-  providers : [Globals]
 })
 export class EngineeringComponent implements OnInit {
   g : Globals;

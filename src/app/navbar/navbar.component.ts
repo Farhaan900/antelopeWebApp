@@ -4,7 +4,6 @@ import { Globals } from '../globals';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
-  providers : [Globals]
 })
 export class NavbarComponent implements OnInit {
   
@@ -31,9 +30,9 @@ export class NavbarComponent implements OnInit {
 
   langChange(){
     if(this.g.language == "Fr"){
-      this.g.language = "En";
+      this.globals.language = "En";
     }else{
-      this.g.language = "Fr";
+      this.globals.language = "Fr";
     }
   }
 
