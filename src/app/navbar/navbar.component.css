@@ -84,10 +84,12 @@
     .menu-items a{
         font-size: 0.8rem;
         padding: 0 0 1rem 0 !important;
+        -webkit-tap-highlight-color: transparent;
     }
     .topnav a{
         padding: 0;
         text-align: right;
+        -webkit-tap-highlight-color: transparent;
     }
     .topnav .language img{
         width: 1rem;
@@ -96,5 +98,8 @@
     .topnav .burger img{
         width: 1.5rem;
         height: 0.6rem;
+    }
+    .dark-mode-toggle{
+        -webkit-tap-highlight-color: transparent;
     }
 }

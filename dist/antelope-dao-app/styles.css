@@ -3615,6 +3615,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 *{
     margin: 0;
+    /* -webkit-tap-highlight-color: transparent; */
 }
 html{
     background: #FBFBFD;

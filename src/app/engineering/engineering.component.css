@@ -52,6 +52,12 @@
     }
     .images-container{
         flex-direction: column;
+        
+    }
+    .images-container a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .title h1{
         font-size: 25px;
@@ -60,9 +66,10 @@
     }
     .image-frame{
         margin: 1.2rem 0;
-        width: 122px;
-        height: 52px;
+        width: 90px;
+        height: 40px;
         border-radius: 6px;
+        padding: 0.5rem 1rem;
     }
     .image-frame img{
         height: 31px;
