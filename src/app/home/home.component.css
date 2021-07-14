@@ -1,22 +1,27 @@
 .home-container {
     display: flex;
-    height: 100vh;
-    margin: auto;
+    flex-direction: column;
+    /* height: 100vh; */
+    margin: 4% auto 0 auto;
     max-width: 85%;
+    align-items: center;
 }
-
+#earth{
+    width: 50%;
+    margin: 0 0 -10% 0;
+}
 .home-container .center {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    margin: 3rem 0;
+    margin: 3rem 0 3rem 0;
 }
 .home-container .center h1:nth-child(1){
     font-family : var(--primary-font);
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: var(--font-x-large);
     line-height: 58px;
     text-align: center;
@@ -133,21 +138,28 @@
 }
 
 @media screen and (max-width : 450px) {
+    #earth{
+        width: 100%;
+        margin: 0 0 -30% 0;
+    }
     .home-container{
         height: 60vh;
         padding: 0 3rem;
         max-width: 450px;
+        margin: -15% 0 0 0;
     }
     .home-container .waitlist{
         flex-direction: column;
         align-items: center;
     }
-    .home-container .center h1{
+    .home-container .center .head-1{
         font-size: 25px !important;
         line-height: 30px !important;  
     }  
     .home-container .center .head-2{
         margin: 0 0 0.5rem 0;
+        font-size: 24px !important;
+        line-height: 26px !important;  
     }
     .home-container .center .description{
         font-size: 10px;
