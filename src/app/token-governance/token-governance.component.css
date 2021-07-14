@@ -34,9 +34,9 @@
 
 }
 
-.desc{
-    /* width: 70%; */
-}
+/* .desc{
+    width: 70%;
+} */
 .desc p{
     font-family: var(--secondary-font);
     font-style: normal;
@@ -89,4 +89,101 @@
     letter-spacing: 0.015em;
 
     color: var(--secondary-color);
+}
+
+@media screen and (max-width : 450px) {
+    .governance-container{
+        max-width: 1240px;
+        margin: auto 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title h1{
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        /* line-height: 58px; */
+        /* identical to box height */
+    
+        text-align: center;
+    
+        color: var(--secondary-color);
+    
+    }
+    .title-sub h1{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        /* line-height: 35px; */
+        text-align: center;
+        text-transform: capitalize;
+    
+        color: var(--primary-color);
+        margin: .5rem 0 0 0;
+    
+    }
+    
+    /* .desc{
+        width: 70%;
+    } */
+    .desc p{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        /* font-weight: bold; */
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        letter-spacing: 0.015em;
+    
+        color: var(--secondary-color);
+        margin: 1rem 0 0 0;
+    
+    }
+    
+    .body{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0 0 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .col{
+        width: 90%;
+        background: var(--backgeound-color);
+        box-shadow: var(--box-shadow);
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        margin: 1.5rem 0 0 0;
+    }
+    
+    .col .title h1{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        /* line-height: 35px; */
+        text-align: center;
+        text-transform: capitalize;
+    
+        color: var(--primary-color);
+    }
+    
+    .col .desc p{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        /* font-weight: bold; */
+        font-size: 10px;
+        line-height: 145%;
+        /* or 29px */
+    
+        text-align: justify;
+        letter-spacing: 0.015em;
+    
+        color: var(--secondary-color);
+    }
 }

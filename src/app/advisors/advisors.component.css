@@ -1,0 +1,9 @@
+.advisors-container{
+    max-width: 1240px;
+    /* height: 100vh; */
+    margin:6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

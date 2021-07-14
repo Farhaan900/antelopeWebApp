@@ -17,6 +17,9 @@
 
     margin: 0 0 4rem 0;
 }
+.card-container{
+    width: 20%;
+}
 .images-container{
     display: flex;
     justify-content: space-between;
@@ -29,13 +32,14 @@
     border-radius: 15px;
     align-items: center;
     justify-content: center;
-    width: 340px;
-    height : 120px;
+    width: 100%;
+    /* height : 120px; */
     display: flex;
+    padding: 1rem;
 }
 .image-frame img{
-    width: 328px;
-    height: 91px;
+    width: 100%;
+    /* height: 91px; */
 }
 
 .partners-container , .images-container{

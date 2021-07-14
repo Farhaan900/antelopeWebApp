@@ -41,12 +41,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
-    background: var(--background-color);
-    box-shadow: var(--box-shadow);
+    width: 25%;
+    /* background: var(--background-color);
+    box-shadow: var(--box-shadow); */
     border-radius: 10px;
-    margin: 10% 0 0 0;
-    padding: 0 40px 30px 40px;
 }
 .image-card .image-outer{
     width: 256.39px;
@@ -57,11 +55,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -30% 0 0 0;
+    z-index: 1;
+    /* margin: -30% 0 0 0; */
+}
+.image-card .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    z-index: 0;
+    margin: -32.5% 0 0 0;
+    padding: 30% 40px 30px 40px;
 }
 .image-card .image-outer img{
-    height: 213px;
-    width: 213px;
+    height: 90%;
+    width: 90%;
     border-radius: 50%;
 }
 .card-title h1{
@@ -98,5 +108,70 @@
     color: #3E4751;
 }
 @media screen and (max-width : 450px){
+    .team-container{
+        padding: 0 3rem;
+    }
+    .title h1{
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 30px;
+        /* identical to box height */
     
+        text-align: center;
+    
+        color: var(--secondary-color);
+    }
+    .title-sub h1{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: capitalize;
+    
+        color: var(--primary-color);
+    }
+    .image-row{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .image-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: var(--background-color);
+        border-radius: 10px;
+        margin: 3rem 0 0 0;
+    }
+    .image-card .image-outer{
+        width: 156.39px;
+        height: 156.39px;
+    }
+    .card-sub h1{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--font-body);
+        line-height: 25px;
+        text-align: center;
+        color: rgba(63, 72, 82, 0.6);
+        margin: 0 0 15px 0;
+    
+    }
+    .card-desc p{
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        letter-spacing: 0.015em;
+    
+        color: #3E4751;
+    }
 }

@@ -19,10 +19,8 @@ export class NavbarComponent implements OnInit {
       this.g.theme = "light";
       this.themeImage = "../../assets/images/SVG/dark_mode.svg";
     }else{
-      if(confirm('Warning:\nDark Mode is In Development Mode \nDo you want to continue')){
         this.g.theme = "dark";
         this.themeImage = "../../assets/images/SVG/light mode.svg";
-      } 
     }
     const body = document.body;
     body.setAttribute('class',this.g.theme);

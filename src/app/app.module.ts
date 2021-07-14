@@ -34,6 +34,7 @@ import { TokenGovernanceComponent } from './token-governance/token-governance.co
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { TokenPageComponent } from './token-page/token-page.component';
+import { AdvisorsComponent } from './advisors/advisors.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { TokenPageComponent } from './token-page/token-page.component';
     LandingPageComponent,
     AboutPageComponent,
     TokenPageComponent,
+    AdvisorsComponent,
 
   ],
   imports: [
